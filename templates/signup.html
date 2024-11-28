@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+<body>
+   <!-- Header Section -->
+   <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+  <div class="login-container">
+    <div class="social-login">
+      <h1 class="center">Welcome to Flamingo</h1>
+      <p class="center">Create your account to get started!</p>
+      <div class="login-form">
+        <form action="/signup" method="POST">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <div class="button"><button type="submit">Sign Up</button></div>
+        </form>
+      </div>
+    <div class="button">     <button><p><a href="/" class="loginbutton">Login</a></p></button></div>
+     {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul class="flash-messages">
+        <ul>
+        {% for message in messages %}
+        <li class="flash">{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}   
+   </div>
+  </div>
+</body>
+</html>

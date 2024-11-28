@@ -1,0 +1,233 @@
+/*sighup.css */
+
+/* Header */
+header {
+    background: #5A2A82;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+.login-container{
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+  padding: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 113px;
+  margin-bottom: 20px;
+  background-color: white;
+
+  height: 70vh;
+
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.center p{
+  color: gray;
+}
+h1{
+  font-size: 1.5rem;
+}
+header nav ul li {
+    display: inline;
+}
+button{
+  height: 33px;
+  width: 107px;
+  background-color: rgba(20, 60, 221, 0.847);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+a{
+  color: black;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+header nav ul li a:hover {
+    background: #FF4081;
+    border-radius: 5px;
+}
+header .login-btn {
+    background: #FF4081;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    
+    height: 100vh;
+    background-color: #4b3f91;
+    font-family: Arial, sans-serif;
+  }
+  
+  .signup-container {
+    height: 449px;
+    margin-top: 111px;
+    
+    align-content: center;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .signup-form {
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .center{
+    text-align: center;
+    margin-bottom:30px ;
+    color: black;
+  }
+  
+  .signup-form p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  .extra {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-password {
+    cursor: pointer;
+  }
+
+  /* Add this to your login.css file */
+
+.flash-messages {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 20px 0; /* Add some space above and below */
+}
+
+.flash {
+  padding: 10px; /* Add some padding */
+  border-radius: 5px; /* Make corners round */
+}
+
+/* Specific styles for the "Email already exists!" message */
+.flash:contains("Email already exists!") {
+  background-color: red; /* Change background color if needed */
+  color: white; /* Change text color to white */
+}
+
+/* General flash message styles */
+.flash {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Border color */
+}
+  
+  .d-none {
+    display: none;
+  }
+
+  .social-login{
+    margin-top: -1rem;
+    
+  }
+
+
+  .login-form li ::marker{
+    color: white;
+  }
+  
+  .btn.signup {
+    background-color: #4b3f91;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .btn.signup:hover {
+    background-color: #3a2f7c;
+  }
+  
+  .signup-form a {
+    color: #4b3f91;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-form a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 480px) {
+    .signup-container {
+      padding: 15px;
+    }
+  }
+  /* Footer */
+ /* Footer */
