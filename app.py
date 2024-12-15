@@ -62,6 +62,10 @@ def biginer():
 def intermediate():
     return render_template('/intermediate.html')
 
+@app.route('/advance')
+def advance():
+    return render_template('/advance.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':

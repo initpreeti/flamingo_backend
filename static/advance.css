@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Courses Section */
+  #courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .course-box {
+    flex: 1 1 calc(50% - 20px); /* Responsive box sizing */
+    border: 2px solid  #6a1b9a;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .course-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .course-box h3 {
+    color:  #6a1b9a;
+  }
+  
+  .course-box p {
+    margin: 10px 0;
+  }
+  
+  .course-box ul {
+    list-style-type: circle;
+    margin: 10px 0 20px 20px;
+  }
+  
+  button {
+    background-color:  #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color:  #6a1b9a;
+  }
+  
+  /* Progress Section */
+  #progress {
+    margin-top: 30px;
+  }
+  
+  #progress-chart {
+    padding: 20px;
+    border: 2px solid  #6a1b9a ;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background-color:#6a1b9a ;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .course-box {
+      flex: 1 1 100%; /* Full width for smaller screens */
+    }
+  }
+  

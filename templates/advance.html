@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Learners Courses</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='advance.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Flamingo: Advanced Learners</h1>
+      <ul>
+        <li><a href="{{ url_for('user_home') }}">Home</a></li>
+        <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="#grammar">Advanced Grammar</a></li>
+        <li><a href="#vocabulary">Vocabulary</a></li>
+        <li><a href="#conversation">Speaking</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#progress">Progress</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="courses">
+      <h2>Explore Advanced Courses</h2>
+      <div class="course-box" id="grammar">
+        <h3>Advanced Grammar</h3>
+        <p>Master complex grammar topics such as subjunctive mood, passive voice, and clauses.</p>
+        <ul>
+          <li>Example: *If I were you, I would take the opportunity.*</li>
+          <li>Example: *The report has been completed by the team.*</li>
+        </ul>
+        <button onclick="window.location.href='advance-grammar.html'">Start Grammar Lesson</button>
+      </div>
+      <div class="course-box" id="vocabulary">
+        <h3>Vocabulary Expansion</h3>
+        <p>Expand your vocabulary with idioms, industry terms, and phrasal verbs.</p>
+        <ul>
+          <li>Example: *Break the ice (start a conversation).*</li>
+          <li>Example: *Burn the midnight oil (work late).*</li>
+        </ul>
+        <button onclick="startLesson('vocabulary')">Start Vocabulary Lesson</button>
+      </div>
+      <div class="course-box" id="conversation">
+        <h3>Speaking Practice</h3>
+        <p>Practice real-life conversations with AI-powered feedback.</p>
+        <ul>
+          <li>Scenario: Ordering food in a restaurant.</li>
+          <li>Scenario: Making a travel booking.</li>
+        </ul>
+        <button onclick="startLesson('conversation')">Start Speaking Practice</button>
+      </div>
+      <div class="course-box" id="writing">
+        <h3>Writing Practice</h3>
+        <p>Enhance your writing with guided exercises and feedback.</p>
+        <ul>
+          <li>Activity: Write an email to your boss.</li>
+          <li>Activity: Draft a short story on an unexpected adventure.</li>
+        </ul>
+        <button onclick="startLesson('writing')">Start Writing Practice</button>
+      </div>
+    </section>
+
+    <section id="progress">
+      <h2>Your Progress Tracker</h2>
+      <div id="progress-chart">Your progress will appear here.</div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Flamingo Learning. All Rights Reserved.</p>
+  </footer>
+  <script src="{{ url_for('static', filename='advance.js') }}"></script>
+</body>
+</html>
