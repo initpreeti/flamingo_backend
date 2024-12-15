@@ -25,7 +25,7 @@
 
                 <li><a href="{{ url_for('contact') }}">Contact</a></li>
 
-                <li><a href="{{ url_for('home') }}" class="login-btn">Login</a></li>
+
 
             </ul>
         </nav>
@@ -38,8 +38,8 @@
             <h2>Learn Hindi to English with Flamingo!</h2>
             <p>Master English through interactive lessons, games, and real-life conversations.</p>
             <div class="hero-buttons">
-                <a href="./course.html" class="btn-primary">Start Learning</a>
-                <a href="./Feature.html" class="btn-secondary">Explore Features</a>
+                <a href="{{ url_for('Course') }}" class="btn-primary">Start Learning</a>
+                <a href="{{ url_for('feature') }}" class="btn-secondary">Explore Features</a>
             </div>
         </div>
     </section>

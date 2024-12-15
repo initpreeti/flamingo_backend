@@ -46,6 +46,15 @@ def user_home():
 def about_us():
     return render_template('AboutUs.html')  # Render the AboutUs.html page
 
+@app.route('/Feature')
+def feature():
+    return render_template('Feature.html')
+
+@app.route('/course')
+def Course():
+    return render_template('course.html')
+
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':

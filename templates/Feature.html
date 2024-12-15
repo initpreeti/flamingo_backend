@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Flamingo Language Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='feature.css') }}">
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <div class="container">
+            <h1 class="logo">Flamingo</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+                    <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+    
+                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+    
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <section class="features-section">
+        <div class="feature-cards-container">
+            <!-- Feature 1: Interactive Lessons -->
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3 class="feature-title">Interactive Lessons</h3>
+                <p class="feature-description">Learn through interactive lessons with quizzes, videos, and engaging content to keep you motivated.</p>
+            </div>
+
+            <!-- Feature 2: Gamification -->
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3 class="feature-title">Gamification</h3>
+                <p class="feature-description">Earn points, unlock badges, and level up as you complete lessons and challenges in a fun and rewarding way.</p>
+            </div>
+
+            <!-- Feature 3: Pronunciation Practice -->
+            <div class="feature-card">
+                <div class="feature-icon">🎤</div>
+                <h3 class="feature-title">Pronunciation Practice</h3>
+                <p class="feature-description">Improve your pronunciation with real-time feedback using voice recognition technology.</p>
+            </div>
+
+            <!-- Feature 4: Community Learning -->
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3 class="feature-title">Community Learning</h3>
+                <p class="feature-description">Join the Flamingo community to practice speaking, exchange ideas, and learn from other language enthusiasts.</p>
+            </div>
+
+            <!-- Feature 5: AI Chatbot -->
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3 class="feature-title">AI Chatbot</h3>
+                <p class="feature-description">Practice conversations with an AI chatbot that understands your language and helps you improve your fluency.</p>
+            </div>
+
+            <!-- Feature 6: Progress Tracking -->
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3 class="feature-title">Progress Tracking</h3>
+                <p class="feature-description">Track your learning progress with detailed reports and insights into your strengths and areas for improvement.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
