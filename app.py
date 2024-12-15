@@ -11,7 +11,7 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row  # This allows us to access columns by name
     return conn
 
-# Create the users table if it doesn't exist
+# Create the users and contact_messages tables if they don't exist
 def init_db():
     conn = get_db_connection()
     conn.execute('''
@@ -21,12 +21,56 @@ def init_db():
             password TEXT NOT NULL
         )
     ''')
+    conn.execute('''
+        CREATE TABLE IF NOT EXISTS contact_messages (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            email TEXT NOT NULL,
+            phone TEXT NOT NULL,
+            subject TEXT NOT NULL,
+            message TEXT NOT NULL
+        )
+    ''')
     conn.commit()
     conn.close()
 
 @app.route('/')
 def home():
     return render_template('login.html')
+
+@app.route('/home')
+def user_home():
+    return render_template('home.html')  # Render the home.html page
+
+@app.route('/about')
+def about_us():
+    return render_template('AboutUs.html')  # Render the AboutUs.html page
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        phone = request.form['phone']
+        subject = request.form['subject']
+        message = request.form['message']
+        
+        # Save the contact message to the database
+        conn = get_db_connection()
+        conn.execute('INSERT INTO contact_messages (name, email, phone, subject, message) VALUES (?, ?, ?, ?, ?)',
+                     (name, email, phone, subject, message))
+        conn.commit()
+        conn.close()
+        
+        flash('Your message has been sent!', 'success')
+        
+        # Redirect to the referrer URL or home if not available
+        referrer = session.get('referrer', url_for('user_home'))  # Default to home if no referrer
+        return redirect(referrer)
+
+    # Store the referrer URL in the session
+    session['referrer'] = request.referrer
+    return render_template('contact.html')  # Render the contact.html page
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -47,7 +91,7 @@ def signup():
         conn.commit()
         conn.close()
         flash('Signup successful! Please login.')
-        return redirect(url_for('login'))  # Redirect to login page after signup
+        return redirect(url_for('home'))
 
     return render_template('signup.html')
 
@@ -68,14 +112,6 @@ def login():
         flash('Invalid email or password.')
         return redirect(url_for('home'))
 
-@app.route('/user_home')
-def user_home():
-    if 'user' in session:
-        return render_template('home.html')  # Render the home.html page for logged-in users
-    else:
-        flash('You need to log in first.')
-        return redirect(url_for('home'))
-
 @app.route('/logout')
 def logout():
     session.pop('user', None)
@@ -83,5 +119,5 @@ def logout():
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
-    init_db()  # Create the database and table if they don't exist
+    init_db()  # Create the database and tables if they don't exist
     app.run(debug=True)

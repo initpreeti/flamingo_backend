@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='About.css') }}">
+</head>
+<body>
+     <!--  Header section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Flamingo</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+                    <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+    
+                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+    
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    
+                    <li><a href="{{ url_for('home') }}" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-content">
+        <div class="about-image">
+            <img src="Flamingo_img.jpg" alt="Our Team" >
+        </div>
+        <div class="about-text">
+            <h2>Who We Are</h2>
+            <p>
+                Flamingo is your trusted platform for Hindi-to-English language learning. Our mission is to empower learners with innovative tools, personalized lessons, and a supportive community to make language learning effective and fun.
+            </p>
+            <p>
+                We focus on blending education with technology, creating interactive experiences that inspire confidence in learners.
+            </p>
+        </div>
+    </section>
+
+    <section class="about-values">
+        <h2>Our Core Values</h2>
+        <div class="values-container">
+            <div class="value">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>We constantly innovate to deliver the best learning experience.</p>
+            </div>
+            <div class="value">
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>Our community is at the heart of everything we do.</p>
+            </div>
+            <div class="value">
+                <i class="fas fa-check-circle"></i>
+                <h3>Excellence</h3>
+                <p>We strive for excellence in our content, tools, and approach.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="about-footer">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
