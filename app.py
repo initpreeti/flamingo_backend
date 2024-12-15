@@ -54,6 +54,9 @@ def feature():
 def Course():
     return render_template('course.html')
 
+@app.route('/Biginer')
+def biginer():
+    return render_template('/biginer.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
