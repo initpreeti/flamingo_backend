@@ -47,7 +47,7 @@ def signup():
         conn.commit()
         conn.close()
         flash('Signup successful! Please login.')
-        return redirect(url_for('home'))
+        return redirect(url_for('login'))  # Redirect to login page after signup
 
     return render_template('signup.html')
 
@@ -63,9 +63,17 @@ def login():
     if user and check_password_hash(user['password'], password):
         session['user'] = email
         flash('Login successful!')
-        return redirect(url_for('home'))  # Redirect to a dashboard or home page
+        return redirect(url_for('user_home'))  # Redirect to user home page
     else:
         flash('Invalid email or password.')
+        return redirect(url_for('home'))
+
+@app.route('/user_home')
+def user_home():
+    if 'user' in session:
+        return render_template('home.html')  # Render the home.html page for logged-in users
+    else:
+        flash('You need to log in first.')
         return redirect(url_for('home'))
 
 @app.route('/logout')
