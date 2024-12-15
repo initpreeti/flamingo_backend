@@ -58,6 +58,10 @@ def Course():
 def biginer():
     return render_template('/biginer.html')
 
+@app.route('/intermediate')
+def intermediate():
+    return render_template('/intermediate.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
