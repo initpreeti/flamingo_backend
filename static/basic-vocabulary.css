@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+     line-height: 1.6; 
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+     margin: 0 auto; 
+  }
+  
+  /* Header */
+  header {
+    background-color: #5A2A82;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+     top: 0; 
+    width: 100%; 
+   z-index: 1000;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: top 2px; ;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+     font-weight: bold; 
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+  
+  .login-btn {
+    background-color: #FF4081;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  header nav ul li a:hover {
+    background: #FF4081;
+    border-radius: 5px;
+}
+header .login-btn {
+    background: rgb(130, 44, 195);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+  /* Vocabulary Section */
+  .vocabulary {
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .category-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .category-card h3 {
+    text-align: center;
+    color: #5A2A82;
+    margin-bottom: 10px;
+  }
+  
+  .category-card ul {
+    list-style: none;
+  }
+  
+  .category-card li {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #5A2A82;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #7C40B4;
+  }
+  
+  /* Quiz Section */
+  .quiz-section {
+    margin-top: 50px;
+  }
+  
+  .quiz-section button {
+    background-color: #FF4081;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quiz-section button:hover {
+    background-color: #FF6EA5;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #5A2A82;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .categories {
+      flex-direction: column;
+    }
+  
+    .category-card {
+      width: 90%;
+    }
+  }
+  

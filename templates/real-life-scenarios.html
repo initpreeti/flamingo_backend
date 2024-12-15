@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-life Scenarios - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='real-life-scenarios.css') }}">
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<br>
+<br>
+<br>
+
+  <!-- Real-life Scenarios Section -->
+  <section class="scenarios">
+    <h1>Practice Real-life Scenarios</h1>
+    <p>Learn how to use English in everyday situations through interactive examples.</p>
+
+    <div class="scenario-list">
+      <!-- Scenario 1 -->
+      <div class="scenario-card">
+        <h2>Shopping</h2>
+        <p>Learn phrases and vocabulary for shopping in English.</p>
+        <button onclick="window.location.href='scenario-shopping.html'">Explore</button>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="scenario-card">
+        <h2>Dining at a Restaurant</h2>
+        <p>Learn how to order food and interact with restaurant staff.</p>
+        <button onclick="window.location.href='scenario-dining.html'">Explore</button>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="scenario-card">
+        <h2>Traveling</h2>
+        <p>Master the vocabulary for asking directions and using transport.</p>
+        <button onclick="window.location.href='scenario-travel.html'">Explore</button>
+      </div>
+
+      <!-- Scenario 4 -->
+      <div class="scenario-card">
+        <h2>Meeting Someone New</h2>
+        <p>Learn how to greet and introduce yourself confidently.</p>
+        <button onclick="window.location.href='scenario-meeting-new.html'">Explore</button>
+      </div>
+          <br>
+          <br>
+          <br>
+      <!-- Scenario 5 -->
+      <div class="scenario-card">
+        
+        <h2>At the Market</h2>
+        <p>Learn bargaining and buying items at the market in English.</p>
+        <button onclick="window.location.href='scenario-market.html'">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->     
+  <!-- <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+  </footer> -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+    
+</body>
+</html>

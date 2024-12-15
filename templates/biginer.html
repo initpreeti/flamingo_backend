@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beginner Courses - Flamingo</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='beginer.css') }}">
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -37,35 +43,35 @@
       <div class="course-card">
         <h2>Alphabet & Numbers</h2>
         <p>Learn the English alphabet and numbers with pronunciation practice.</p>
-        <button onclick="window.location.href='lesson-alphabet.html'">Start Learning</button>
+        <button > <a href="{{ url_for('lesson') }}">Start Learning</a></button>
       </div>
 
       <!-- Course 2 -->
       <div class="course-card">
         <h2>Basic Vocabulary</h2>
         <p>Learn common words used in everyday life with examples.</p>
-        <button onclick="window.location.href='basic_vocabulary.html'">Start Learning</button>
+        <button > <a href="{{ url_for('basicvocab') }}">Start Learning</a></button>
       </div>
 
       <!-- Course 3 -->
       <div class="course-card">
         <h2>Greetings & Introductions</h2>
         <p>Learn how to greet and introduce yourself in English.</p>
-        <button onclick="window.location.href='greeting.html'">Start Learning</button>
+        <button > <a href="{{ url_for('greeting') }}">Start Learning</a></button>
       </div>
 
       <!-- Course 4 -->
       <div class="course-card">
         <h2>Basic Grammar</h2>
         <p>Understand the basic structure of English sentences and grammar rules.</p>
-        <button onclick="window.location.href='grammar.html'">Start Learning</button>
+        <button > <a href="{{ url_for('grammer') }}">Start Learning</a></button>
       </div>
 
       <!-- Course 5 -->
       <div class="course-card">
         <h2>Real-life Scenarios</h2>
         <p>Learn English for everyday situations like shopping and traveling.</p>
-        <button onclick="window.location.href='real-life-scenarios.html'">Start Learning</button>
+        <button > <a href="{{ url_for('reallife') }}">Start Learning</a></button>
       </div>
     </div>
   </section>

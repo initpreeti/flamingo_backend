@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Vocabulary - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='basic-vocabulary.css') }}">
+</head>
+<style>
+  a{
+    text-decoration: none;
+    color: white;
+  }
+</style>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Flamingo</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+          <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+          <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <section class="vocabulary">
+    <h1>Basic Vocabulary</h1>
+    <p>Learn essential words and phrases to start your English learning journey!</p>
+    <!-- Vocabulary Categories -->
+    <div class="categories">
+      <!-- Category: Common Words -->
+      <div class="category-card">
+        <h3>Common Words</h3>
+        <ul>
+          <li>Hello <button onclick="playAudio('hello')">        Hear</button></li>
+          <audio src="audio/hello.mp3"></audio>
+          <li>Goodbye <button onclick="playAudio('goodbye')">    Hear</button></li>
+          <audio src="audio/goodbye.mp3"></audio>
+          <li>Thank You <button onclick="playAudio('thankyou')"> Hear</button></li>
+          <audio src="audio/thankyou.mp3"></audio>
+        </ul>
+      </div>
+
+      <!-- Category: Objects -->
+      <div class="category-card">
+        <h3>Objects</h3>
+        <ul>
+          <li>Book <button onclick="playAudio('book')">  Hear</button></li>
+          <audio src="audio/book.mp3"></audio>
+          <li>Pen <button onclick="playAudio('pen')">    Hear</button></li>
+          <audio src="audio/pen.mp3"></audio>
+          <li>Chair <button onclick="playAudio('chair')">Hear</button></li>
+          <audio src="audio/chair.mp3"></audio>
+        </ul>
+      </div>
+
+      <!-- Category: Animals -->
+      <div class="category-card">
+        <h3>Animals</h3>
+        <ul>
+          <li>Dog <button onclick="playAudio('dog')">  Hear</button></li>
+          <audio src="audio/dog.mp3"></audio>
+          <li>Cat <button onclick="playAudio('cat')">  Hear</button></li>
+          <audio src="audio/cat.mp3"></audio>
+          <li>Bird <button onclick="playAudio('bird')">Hear</button></li>
+          <audio src="audio/bird.mp3"></audio>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-section">
+      <h2>Test Your Vocabulary!</h2>
+      <br>
+      <p>Take a quiz to test your understanding of these words.</p>
+      <br>
+      <button  onclick="window.location.href= 'vocabulary-quiz.html'">Start Quiz</button>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+  <script>
+    // JavaScript function to play audio
+    function playAudio(word) {
+      const audioElement = document.getElementById(`audio-${word}`);
+      if (audioElement) {
+        audioElement.play(); // Play the audio
+      } else {
+        console.error(`Audio element for word "${word}" not found.`);
+      }
+    }
+
+    // Placeholder function for quiz
+    //function startQuiz() {
+     // alert("Quiz functionality coming soon!");
+   // } 
+  </script>
+
+  <!-- Audio Elements -->
+  <audio id="audio-hello" src="audio/hello.mp3"></audio>
+  <audio id="audio-goodbye" src="audio/goodbye.mp3"></audio>
+  <audio id="audio-thankyou" src="audio/thankyou.mp3"></audio>
+  <audio id="audio-book" src="audio/book.mp3"></audio>
+  <audio id="audio-pen" src="audio/pen.mp3"></audio>
+  <audio id="audio-chair" src="audio/chair.mp3"></audio>
+  <audio id="audio-dog" src="audio/dog.mp3"></audio>
+  <audio id="audio-cat" src="audio/cat.mp3"></audio>
+  <audio id="audio-bird" src="audio/bird.mp3"></audio>
+</body>
+</html>

@@ -66,6 +66,27 @@ def intermediate():
 def advance():
     return render_template('/advance.html')
 
+@app.route('/basicVocabulary')
+def basicvocab():
+    return render_template('/Basic_Vocabulary.html')
+
+@app.route('/grammer')
+def grammer():
+    return render_template('/grammar.html')
+
+@app.route('/greeting')
+def greeting():
+    return render_template('/greeting.html')
+
+@app.route('/lessonAlphabet')
+def lesson():
+    return render_template('/lesson-alphabet.html')
+
+@app.route('/realLifeScenarios')
+def reallife():
+    return render_template('/real-life-scenarios.html')
+
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
