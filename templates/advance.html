@@ -46,9 +46,9 @@
           <li>Example: *Break the ice (start a conversation).*</li>
           <li>Example: *Burn the midnight oil (work late).*</li>
         </ul>
-        <button onclick="startLesson('vocabulary')">Start Vocabulary Lesson</button>
+        <button><a href="{{ url_for('vocabexpension') }}">Start Grammar Lesson</a>  </button>
       </div>
-      <div class="course-box" id="conversation">
+      <!-- <div class="course-box" id="conversation">
         <h3>Speaking Practice</h3>
         <p>Practice real-life conversations with AI-powered feedback.</p>
         <ul>
@@ -56,7 +56,7 @@
           <li>Scenario: Making a travel booking.</li>
         </ul>
         <button onclick="startLesson('conversation')">Start Speaking Practice</button>
-      </div>
+      </div> -->
       <div class="course-box" id="writing">
         <h3>Writing Practice</h3>
         <p>Enhance your writing with guided exercises and feedback.</p>
@@ -64,7 +64,7 @@
           <li>Activity: Write an email to your boss.</li>
           <li>Activity: Draft a short story on an unexpected adventure.</li>
         </ul>
-        <button onclick="startLesson('writing')">Start Writing Practice</button>
+        <button><a href="{{ url_for('writingpractice') }}">Start Grammar Lesson</a>  </button>
       </div>
     </section>
 

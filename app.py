@@ -154,6 +154,14 @@ def intermediatequiz():
 def advancegrammer():
     return render_template('/Advancegrammar.html')
 
+@app.route('/vocabexpension')
+def vocabexpension():
+    return render_template('/vocabulary-expansion.html')
+
+@app.route('/writing-practice')
+def writingpractice():
+    return render_template('/writing-practice.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
