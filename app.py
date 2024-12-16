@@ -166,6 +166,14 @@ def writingpractice():
 def grammarrules():
     return render_template('/grammar-rule.html')
 
+@app.route('/sentenceStructure')
+def sentencestruct():
+    return render_template('/sentence-structure.html')
+
+@app.route('/tensesmastery')
+def testmaster():
+    return render_template('/tensesmastery.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':

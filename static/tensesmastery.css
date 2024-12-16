@@ -1,0 +1,96 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #4B0082;;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1, h1 {
+    text-align: center;
+    color: #333;
+}
+
+.tense-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.tense {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quiz {
+    padding: 50px 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #4B0082;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Progress Bar */
+#progress {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#quizResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tense-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+p strong {
+    font-size: 28px; /* Increase or decrease the font size as needed */
+}
+h1 {
+    font-size: 36px; /* Increase or decrease the font size as needed */
+}
+

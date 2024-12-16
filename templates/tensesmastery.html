@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenses Mastery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tensesmastery.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+            <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+    
+            <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+    
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <!-- Main Content -->
+    <section id="tenses">
+        <h1>Tenses Mastery</h1>
+
+        <p><strong>What is a Tense?</strong></p>
+        <p>A tense in English grammar expresses the time when an action or event happens. There are three main tenses: Present, Past, and Future. Each tense has four subtypes, resulting in a total of 12 tenses.</p>
+
+        <p>Learn about the 12 types of tenses in English grammar.</p>
+
+        
+        <div class="tense-container">
+            <div class="tense">
+                <h2>1. Present Simple</h2>
+                <p>Use: For actions that are habitual or general truths.</p>
+                <p>Example: I play football every day.</p>
+            </div>
+            <div class="tense">
+                <h2>2. Present Continuous</h2>
+                <p>Use: For actions happening now or around the present time.</p>
+                <p>Example: She is reading a book.</p>
+            </div>
+            <div class="tense">
+                <h2>3. Present Perfect</h2>
+                <p>Use: For actions that happened at an unspecified time and are still relevant.</p>
+                <p>Example: I have finished my homework.</p>
+            </div>
+            <div class="tense">
+                <h2>4. Present Perfect Continuous</h2>
+                <p>Use: For actions that started in the past and are still continuing.</p>
+                <p>Example: I have been studying for two hours.</p>
+            </div>
+            <div class="tense">
+                <h2>5. Past Simple</h2>
+                <p>Use: For actions that happened and finished in the past.</p>
+                <p>Example: He visited London last year.</p>
+            </div>
+            <div class="tense">
+                <h2>6. Past Continuous</h2>
+                <p>Use: For actions that were in progress at a specific time in the past.</p>
+                <p>Example: They were watching TV at 8 PM.</p>
+            </div>
+            <div class="tense">
+                <h2>7. Past Perfect</h2>
+                <p>Use: For actions that were completed before another action in the past.</p>
+                <p>Example: I had already eaten when she arrived.</p>
+            </div>
+            <div class="tense">
+                <h2>8. Past Perfect Continuous</h2>
+                <p>Use: For actions that were ongoing in the past before another action.</p>
+                <p>Example: He had been working for 2 hours before the meeting started.</p>
+            </div>
+            <div class="tense">
+                <h2>9. Future Simple</h2>
+                <p>Use: For actions that will happen in the future.</p>
+                <p>Example: I will go to the park tomorrow.</p>
+            </div>
+            <div class="tense">
+                <h2>10. Future Continuous</h2>
+                <p>Use: For actions that will be in progress at a specific time in the future.</p>
+                <p>Example: I will be traveling next week.</p>
+            </div>
+            <div class="tense">
+                <h2>11. Future Perfect</h2>
+                <p>Use: For actions that will be completed before a specific point in the future.</p>
+                <p>Example: By 2025, I will have graduated.</p>
+            </div>
+            <div class="tense">
+                <h2>12. Future Perfect Continuous</h2>
+                <p>Use: For actions that will be ongoing in the future until a certain point.</p>
+                <p>Example: By next month, she will have been studying for three years.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Test Your Knowledge</h2>
+        <form id="quizForm">
+            <!-- 20 Quiz Questions -->
+            <div>
+                <label>1. "I ____ to the store tomorrow." (Future Simple)</label><br>
+                <input type="radio" name="q1" value="will go"> Will go<br>
+                <input type="radio" name="q1" value="went"> Went<br>
+                <input type="radio" name="q1" value="am going"> Am going<br>
+            </div>
+            <div>
+                <label>2. "She ____ reading a book right now." (Present Continuous)</label><br>
+                <input type="radio" name="q2" value="is"> Is<br>
+                <input type="radio" name="q2" value="was"> Was<br>
+                <input type="radio" name="q2" value="has been"> Has been<br>
+            </div>
+            <!-- Repeat similar structure for more questions up to q20 -->
+            <!-- Example for the next questions (q3 to q20) -->
+            <div>
+                <label>3. "They ____ already finished their homework." (Present Perfect)</label><br>
+                <input type="radio" name="q3" value="have"> Have<br>
+                <input type="radio" name="q3" value="has"> Has<br>
+                <input type="radio" name="q3" value="did"> Did<br>
+            </div>
+
+            <div>
+                <label>1. "I ____ to the store tomorrow." (Future Simple)</label><br>
+                <input type="radio" name="q1" value="will go"> Will go<br>
+                <input type="radio" name="q1" value="went"> Went<br>
+                <input type="radio" name="q1" value="am going"> Am going<br>
+            </div>
+            
+            <div>
+                <label>2. "She ____ reading a book right now." (Present Continuous)</label><br>
+                <input type="radio" name="q2" value="is"> Is<br>
+                <input type="radio" name="q2" value="was"> Was<br>
+                <input type="radio" name="q2" value="has been"> Has been<br>
+            </div>
+            
+            <div>
+                <label>3. "They ____ already finished their homework." (Present Perfect)</label><br>
+                <input type="radio" name="q3" value="have"> Have<br>
+                <input type="radio" name="q3" value="has"> Has<br>
+                <input type="radio" name="q3" value="did"> Did<br>
+            </div>
+            
+            <div>
+                <label>4. "I ____ studying for two hours." (Present Perfect Continuous)</label><br>
+                <input type="radio" name="q4" value="have been"> Have been<br>
+                <input type="radio" name="q4" value="am"> Am<br>
+                <input type="radio" name="q4" value="was"> Was<br>
+            </div>
+            
+            <div>
+                <label>5. "He ____ to London last year." (Past Simple)</label><br>
+                <input type="radio" name="q5" value="went"> Went<br>
+                <input type="radio" name="q5" value="goes"> Goes<br>
+                <input type="radio" name="q5" value="is going"> Is going<br>
+            </div>
+            
+            <div>
+                <label>6. "They ____ watching TV at 8 PM last night." (Past Continuous)</label><br>
+                <input type="radio" name="q6" value="were"> Were<br>
+                <input type="radio" name="q6" value="are"> Are<br>
+                <input type="radio" name="q6" value="had been"> Had been<br>
+            </div>
+            
+            <div>
+                <label>7. "I ____ finished my homework before she arrived." (Past Perfect)</label><br>
+                <input type="radio" name="q7" value="had"> Had<br>
+                <input type="radio" name="q7" value="have"> Have<br>
+                <input type="radio" name="q7" value="was"> Was<br>
+            </div>
+            
+            <div>
+                <label>8. "He ____ working for 2 hours when I called him." (Past Perfect Continuous)</label><br>
+                <input type="radio" name="q8" value="had been"> Had been<br>
+                <input type="radio" name="q8" value="was"> Was<br>
+                <input type="radio" name="q8" value="is"> Is<br>
+            </div>
+            
+            <div>
+                <label>9. "I ____ go to the park tomorrow." (Future Simple)</label><br>
+                <input type="radio" name="q9" value="will"> Will<br>
+                <input type="radio" name="q9" value="am"> Am<br>
+                <input type="radio" name="q9" value="have"> Have<br>
+            </div>
+            
+            <div>
+                <label>10. "I ____ be traveling next week." (Future Continuous)</label><br>
+                <input type="radio" name="q10" value="will be"> Will be<br>
+                <input type="radio" name="q10" value="am"> Am<br>
+                <input type="radio" name="q10" value="was"> Was<br>
+            </div>
+            
+            <div>
+                <label>11. "By 2025, I ____ graduated." (Future Perfect)</label><br>
+                <input type="radio" name="q11" value="will have"> Will have<br>
+                <input type="radio" name="q11" value="had"> Had<br>
+                <input type="radio" name="q11" value="will"> Will<br>
+            </div>
+            
+            <div>
+                <label>12. "By next year, she ____ been studying for 3 years." (Future Perfect Continuous)</label><br>
+                <input type="radio" name="q12" value="will have"> Will have<br>
+                <input type="radio" name="q12" value="will have been"> Will have been<br>
+                <input type="radio" name="q12" value="is"> Is<br>
+            </div>
+            
+            <!-- Additional 8 questions to reach 20 quiz questions -->
+            <div>
+                <label>13. "We ____ working on the project all day." (Present Perfect Continuous)</label><br>
+                <input type="radio" name="q13" value="have been"> Have been<br>
+                <input type="radio" name="q13" value="were"> Were<br>
+                <input type="radio" name="q13" value="are"> Are<br>
+            </div>
+            
+            <div>
+                <label>14. "She ____ to the gym every day." (Present Simple)</label><br>
+                <input type="radio" name="q14" value="goes"> Goes<br>
+                <input type="radio" name="q14" value="is going"> Is going<br>
+                <input type="radio" name="q14" value="will go"> Will go<br>
+            </div>
+            
+            <div>
+                <label>15. "By the time we arrive, the movie ____ started." (Future Perfect)</label><br>
+                <input type="radio" name="q15" value="will have"> Will have<br>
+                <input type="radio" name="q15" value="will"> Will<br>
+                <input type="radio" name="q15" value="is"> Is<br>
+            </div>
+            
+            <div>
+                <label>16. "She ____ waiting for us when we arrive." (Future Continuous)</label><br>
+                <input type="radio" name="q16" value="will be"> Will be<br>
+                <input type="radio" name="q16" value="is"> Is<br>
+                <input type="radio" name="q16" value="was"> Was<br>
+            </div>
+            
+            <div>
+                <label>17. "I ____ go out if it stops raining." (Future Simple)</label><br>
+                <input type="radio" name="q17" value="will"> Will<br>
+                <input type="radio" name="q17" value="am"> Am<br>
+                <input type="radio" name="q17" value="would"> Would<br>
+            </div>
+            
+            <div>
+                <label>18. "They ____ left before we arrived." (Past Perfect)</label><br>
+                <input type="radio" name="q18" value="had"> Had<br>
+                <input type="radio" name="q18" value="have"> Have<br>
+                <input type="radio" name="q18" value="was"> Was<br>
+            </div>
+            
+            <div>
+                <label>19. "She ____ at the office all day yesterday." (Past Continuous)</label><br>
+                <input type="radio" name="q19" value="was working"> Was working<br>
+                <input type="radio" name="q19" value="worked"> Worked<br>
+                <input type="radio" name="q19" value="is working"> Is working<br>
+            </div>
+            
+            <div>
+                <label>20. "By the end of this year, we ____ completed the project." (Future Perfect Continuous)</label><br>
+                <input type="radio" name="q20" value="will have been"> Will have been<br>
+                <input type="radio" name="q20" value="will"> Will<br>
+                <input type="radio" name="q20" value="are"> Are<br>
+            </div>
+            
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="quizResult"></div>
+        <div id="progress"></div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tenses Mastery. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='tensesmastery.js') }}"></script>
+</body>
+</html>
