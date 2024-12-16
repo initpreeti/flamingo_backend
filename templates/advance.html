@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Advanced Learners Courses</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='advance.css') }}">
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,14 +18,12 @@
       <h1>Flamingo: Advanced Learners</h1>
       <ul>
         <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
         <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
         <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
         <li><a href="{{ url_for('contact') }}">Contact</a></li>
-        <li><a href="#grammar">Advanced Grammar</a></li>
-        <li><a href="#vocabulary">Vocabulary</a></li>
-        <li><a href="#conversation">Speaking</a></li>
-        <li><a href="#writing">Writing</a></li>
-        <li><a href="#progress">Progress</a></li>
       </ul>
     </nav>
   </header>
@@ -33,7 +37,7 @@
           <li>Example: *If I were you, I would take the opportunity.*</li>
           <li>Example: *The report has been completed by the team.*</li>
         </ul>
-        <button onclick="window.location.href='advance-grammar.html'">Start Grammar Lesson</button>
+        <button><a href="{{ url_for('advancegrammer') }}">Start Grammar Lesson</a>  </button>
       </div>
       <div class="course-box" id="vocabulary">
         <h3>Vocabulary Expansion</h3>

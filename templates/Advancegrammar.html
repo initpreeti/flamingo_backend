@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Grammar</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='Advancegrammar.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Advanced Grammar Features & Courses</h1>
+  </header>
+  <div class="container">
+    <div class="box">
+      
+      <h2>Grammar Rules</h2>
+      <p>Learn advanced grammar rules with examples and explanations.</p>
+      <button onclick="window.location.href='grammar-rule.html'">Explore Now</button>
+    </div>
+    <div class="box">
+      <h2>Sentence Structures</h2>
+      <p>Understand complex sentence formations and usage.</p>
+      <button onclick="window.location.href='sentence-structure.html'">Get Started</button>
+    </div>
+    <div class="box">
+      <h2>Tenses Mastery</h2>
+      <p>Master all tenses with tips and practice exercises.</p>
+      <button onclick="window.location.href='tenses mastery.html'">Learn More</button>
+    </div>
+    <div class="box">
+      <h2>Practice Tests</h2>
+      <p>Test your knowledge with interactive grammar quizzes.</p>
+      <button onclick="window.location.href='practice-test.html'">Take a Test</button>
+    </div>
+    <div class="box">
+      <h2>Vocabulary Expansion</h2>
+      <p>Enhance your vocabulary with advanced word usage and exercises.</p>
+      <button onclick="window.location.href='vocabulary-expansion.html'">Start Learning</button>
+    </div>
+    <div class="box">
+      <h2>Pronunciation Tips</h2>
+      <p>Perfect your pronunciation with easy-to-follow guides and audio.</p>
+      <button onclick="window.location.href= 'pronunciation-tips.html'">Improve Now</button>
+    </div>
+    <div class="box">
+      <h2>Advanced Punctuation</h2>
+      <p>Master the use of punctuation in complex sentences.</p>
+      <button onclick=" window.location.href='advance punctuation.html'">Explore More</button>
+    </div>
+    <div class="box">
+      <h2>Writing Techniques</h2>
+      <p>Improve your writing style with advanced techniques and examples.</p>
+      <button onclick="showDetails('Writing Techniques', 'Master writing techniques for clarity and impact.')">Get Started</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Advanced Grammar Courses | All Rights Reserved</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='Advancegrammar.js') }}"></script>
+</body>
+</html>
+ 

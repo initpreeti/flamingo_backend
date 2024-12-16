@@ -149,6 +149,11 @@ def everyday():
 @app.route('/intermediate-quiz')
 def intermediatequiz():
     return render_template('/intermediate-quiz.html')
+
+@app.route('/advancegrammer')
+def advancegrammer():
+    return render_template('/Advancegrammar.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
