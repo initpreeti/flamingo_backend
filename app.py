@@ -162,6 +162,10 @@ def vocabexpension():
 def writingpractice():
     return render_template('/writing-practice.html')
 
+@app.route('/grammarrules')
+def grammarrules():
+    return render_template('/grammar-rule.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':

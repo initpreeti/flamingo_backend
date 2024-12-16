@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Advanced Grammar</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='Advancegrammar.css') }}">
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -15,7 +21,7 @@
       
       <h2>Grammar Rules</h2>
       <p>Learn advanced grammar rules with examples and explanations.</p>
-      <button onclick="window.location.href='grammar-rule.html'">Explore Now</button>
+      <button><a href="{{ url_for('grammarrules') }}"> Explore</a></button>
     </div>
     <div class="box">
       <h2>Sentence Structures</h2>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Rules - Learn Grammar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='grammar-rule.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>Grammar Rules</h1>
+            <ul>
+                <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+                <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+        
+                <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+        
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <section id="basic">
+            <h2>Basic Grammar Rules</h2>
+            <div class="box">
+                <p><strong>Rule 1:</strong> A noun represents a person, place, thing, or idea.</p>
+                <p><strong>Rule 2:</strong> Verbs express actions or states of being.</p>
+                <p><strong>Rule 3:</strong> Adjectives modify nouns to give more information.</p>
+                <p><strong>Rule 4:</strong> Use articles (a, an, the) correctly before nouns.</p>
+                <p>...</p>
+            </div>
+        </section>
+
+        <section id="intermediate">
+            <h2>Intermediate Grammar Rules</h2>
+            <div class="box">
+                <p><strong>Rule 1:</strong> Use tenses correctly to indicate time.</p>
+                <p><strong>Rule 2:</strong> Understand modal verbs like 'can,' 'may,' and 'should.'</p>
+                <p><strong>Rule 3:</strong> Use conditionals for hypothetical situations.</p>
+                <p>...</p>
+            </div>
+        </section>
+
+        <section id="advanced">
+            <h2>Advanced Grammar Rules</h2>
+            <div class="box">
+                <p><strong>Rule 1:</strong> Use inversion for emphasis (e.g., \"Never have I seen...\").</p>
+                <p><strong>Rule 2:</strong> Master the use of subjunctive mood.</p>
+                <p><strong>Rule 3:</strong> Use advanced punctuation like colons and semicolons.</p>
+                <p>...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Language Learning Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="grammar-rule.js"></script>
+</body>
+</html>
