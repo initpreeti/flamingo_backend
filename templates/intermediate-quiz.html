@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Quiz - 200+ Questions</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='intermediate-quiz.css') }}">
+  <script src="{{ url_for('static', filename='intermediate-quiz.js') }}" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+    <h1 class="logo">Quiz Questions</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+        <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="grammar">
+      <h2>Basic Grammar</h2>
+      <div id="grammar-quiz"></div>
+    </section>
+
+    <section id="conversation">
+      <h2>Common Conversation</h2>
+      <div id="conversation-quiz"></div>
+    </section>
+
+    <section id="vocabulary">
+      <h2>Everyday Vocabulary</h2>
+      <div id="vocabulary-quiz"></div>
+    </section>
+       <br>
+       
+    <div class="quiz-controls">
+      <button id="submit-btn">Submit Quiz</button>
+      <p id="result"></p>
+    </div>
+  </main>
+         <br>
+         <br>
+         <br>
+  <!-- <footer>
+    <p>&copy; 2024 Flamingo Language Learning</p>
+  </footer> -->
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

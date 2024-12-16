@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Someone New - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='scenario-meeting-new.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <!-- <header>
+    <nav>
+      <div class="logo">Flamingo</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header> -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+ <br>
+ <br>
+ <br>
+ <br>
+  <!-- Meeting Someone New Scenario Section -->
+  <section class="scenario-content">
+    <h1>Meeting Someone New</h1>
+    <p>Learn how to introduce yourself and start conversations with new people in English.</p>
+
+    <!-- Key Vocabulary Section -->
+    <div class="vocabulary">
+      <h2>Key Vocabulary</h2>
+      <ul>
+        <li><strong>Hello:</strong> A greeting used when meeting someone.</li>
+        <li><strong>Nice to meet you:</strong> A polite phrase used after introductions.</li>
+        <li><strong>Where are you from?:</strong> A question used to ask about someone's origin.</li>
+        <li><strong>What do you do?:</strong> A question used to ask about someone's profession or occupation.</li>
+        <li><strong>How are you?:</strong> A common greeting used to ask about someone's well-being.</li>
+      </ul>
+    </div>
+
+    <!-- Sample Dialogues Section -->
+    <div class="dialogues">
+      <h2>Sample Dialogues</h2>
+      <p><strong>Person 1:</strong> Hi! My name is John. What's your name?</p>
+      <p><strong>Person 2:</strong> Hello, John! I'm Sarah. Nice to meet you!</p>
+      <p><strong>Person 1:</strong> Nice to meet you too! Where are you from?</p>
+      <p><strong>Person 2:</strong> I'm from New York. How about you?</p>
+      <p><strong>Person 1:</strong> I'm from London. What do you do?</p>
+      <p><strong>Person 2:</strong> I'm a teacher. And you?</p>
+      <p><strong>Person 1:</strong> I'm a software engineer. That's great!</p>
+    </div>
+
+    <!-- Interactive Practice Section -->
+    <div class="practice">
+      <h2>Interactive Practice</h2>
+      <p><strong>Question:</strong> What would you say if someone asks "Where are you from?"</p>
+      <ol>
+        <li><button onclick="checkAnswer('wrong')">"What do you do?"</button></li>
+        <li><button onclick="checkAnswer('correct')">"I'm from New York."</button></li>
+        <li><button onclick="checkAnswer('wrong')">"How are you?"</button></li>
+      </ol>
+    </div>
+
+    <!-- Cultural Context Section -->
+    <div class="cultural-context">
+      <h2>Cultural Context</h2>
+      <p><strong>Tip:</strong> In many Western cultures, people greet each other with a handshake or a hug, depending on the level of familiarity. In other cultures, bowing or offering a slight nod is common.</p>
+      <p><strong>Tip:</strong> When you meet someone for the first time, it's polite to ask about their job or where they are from as a conversation starter.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer> -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+  <!-- JavaScript for Quiz -->
+  <script>
+    function checkAnswer(answer) {
+      if (answer === 'correct') {
+        alert('Correct! Well done.');
+      } else {
+        alert('Oops! Try again.');
+      }
+    }
+  </script>
+</body>
+</html>

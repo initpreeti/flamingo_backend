@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Scenario - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='scenario-shopping.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  <br>
+  <br>
+  <br>
+  
+  <!-- Shopping Scenario Section -->
+  <section class="scenario-content">
+    <h1>Shopping Scenario</h1>
+    <p>Learn how to shop confidently in English. This module covers key vocabulary, useful dialogues, and interactive exercises to master shopping conversations.</p>
+
+    <!-- Vocabulary Section -->
+    <div class="vocabulary">
+      <h2>Key Vocabulary</h2>
+      <ul>
+        <li>Price: The cost of something.</li>
+        <li>Discount: A reduction in the price.</li>
+        <li>Bill/Receipt: A printed record of purchase.</li>
+        <li>Bargain: Negotiate the price.</li>
+        <li>Cashier: The person at the checkout counter.</li>
+      </ul>
+    </div>
+
+    <!-- Dialogue Practice Section -->
+    <div class="dialogues">
+      <h2>Sample Dialogues</h2>
+      <p><strong>Customer:</strong> How much is this t-shirt?</p>
+      <p><strong>Shopkeeper:</strong> It’s $20. Would you like to try it on?</p>
+      <p><strong>Customer:</strong> Yes, please. Can I get it in a different color?</p>
+      <p><strong>Shopkeeper:</strong> Sure! We have it in red and blue.</p>
+    </div>
+
+    <!-- Interactive Practice Section -->
+    <div class="practice">
+      <h2>Interactive Practice</h2>
+      <p><strong>Question:</strong> What would you say to ask for a discount?</p>
+      <ol>
+        <li><button onclick="checkAnswer('wrong')">"Where is the receipt?"</button></li>
+        <li><button onclick="checkAnswer('wrong')">"How much is the total?"</button></li>
+        <li><button onclick="checkAnswer('correct')">"Can you give me a discount?"</button></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer> -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+  <!-- JavaScript for Quiz -->
+  <script>
+    function checkAnswer(answer) {
+      if (answer === 'correct') {
+        alert('Correct! Well done.');
+      } else {
+        alert('Oops! Try again.');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjective - Flamingo</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #6a1b9a;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #4a148c;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            color: #6a1b9a;
+        }
+
+        .quiz-box {
+            background-color: #fdf3f7;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .quiz-box button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz-box button:hover {
+            background-color: #4a148c;
+        }
+
+        .responsive {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            flex: 1 1 calc(33% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>  🦩Flamingo: Learn Adjectives 📚</h1>
+</header>
+
+<nav>
+    <h3> 🦩Flamingo</h3>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./">Courses</a></li>
+        <li><a href="./grammar.html">Grammar</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="box">
+        <h2>What is an Adjective?</h2>
+        <p>An adjective is a word that describes or modifies a noun or pronoun by providing information about its quality, quantity, number, or state. Adjectives make nouns or pronouns more specific and detailed.
+  <br>
+  <br>
+            🔸Examples:
+            
+             ▪️She is a beautiful girl. (Here, "beautiful" describes the quality of the girl.)
+            <br>
+            ▪️I have two apples. (Here, "two" indicates the number of apples.)
+            <br>
+            ▪️This is a big house. (Here, "big" tells about the size of the house.)</p>
+        <p><strong>Example:</strong> The *red* apple is sweet.</p>
+    </div>
+
+    <div class="box">
+        <h2>Types of Adjectives</h2>
+        <ul>
+            <li><strong>1.Descriptive Adjectives:</strong> <br> Describe the quality of a noun. <br> Example: *Beautiful* house. <br>This pen is mine.
+              <br>  Those flowers are beautiful.</li>
+            <li><strong>2.Quantitative Adjectives:</strong><br> Indicate the quantity. <br> Example: *Five* apples.</li>
+            <li><strong>3.Demonstrative Adjectives:</strong> <br> Point out specific things. <br> Example: *This* book, *that* car.</li>
+            <li><strong>4.Possessive Adjectives:</strong> <br> Show possession. <br> Example: *My* pen, *your* bag.</li>
+            <li><strong>5.Interrogative Adjectives:</strong> <br> Used in questions.  <br>Example: *Which* color do you prefer?</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2> 🔸Examples of Adjectives</h2>
+        <ul>
+            <li>The *bright* sun shone all day.</li>
+            <li>She has a *beautiful* smile.</li>
+            <li>I found *seven* coins under the table.</li>
+            <li>Can you bring *that* bag here?</li>
+        </ul>
+    </div>
+
+    <div class="box quiz-box">
+        <h2>Adjective Quiz</h2>
+        <p id="question">Question will appear here</p>
+        <div id="options"></div>
+        <button id="next">Next Question</button>
+        <p id="score">Score: 0</p>
+    </div>
+</div>
+
+<footer>
+    <p>Flamingo &copy; 2024. Learn English with fun!</p>
+</footer>
+
+<script>
+    const questions = [
+        
+    {
+        question: "Which word is an adjective in this sentence: 'The sky is blue'?",
+        options: ["sky", "is", "blue", "The"],
+        correct: "blue"
+    },
+    {
+        question: "Identify the adjective: 'She has a beautiful garden.'",
+        options: ["She", "has", "beautiful", "garden"],
+        correct: "beautiful"
+    },
+    {
+        question: "Find the adjective: 'The coffee is hot.'",
+        options: ["coffee", "is", "hot", "The"],
+        correct: "hot"
+    },
+    {
+        question: "What is the adjective in this sentence: 'He is a kind man'?",
+        options: ["He", "is", "kind", "man"],
+        correct: "kind"
+    },
+    {
+        question: "Choose the adjective: 'The movie was interesting.'",
+        options: ["movie", "was", "interesting", "The"],
+        correct: "interesting"
+    },
+    {
+        question: "Identify the adjective: 'The tall building is new.'",
+        options: ["tall", "building", "is", "new"],
+        correct: "tall"
+    },
+    {
+        question: "Which word is an adjective: 'She wore a red dress'?",
+        options: ["She", "wore", "red", "dress"],
+        correct: "red"
+    },
+    {
+        question: "Find the adjective: 'The cake was delicious.'",
+        options: ["cake", "was", "delicious", "The"],
+        correct: "delicious"
+    },
+    {
+        question: "Identify the adjective: 'He bought an expensive car.'",
+        options: ["He", "bought", "expensive", "car"],
+        correct: "expensive"
+    },
+    {
+        question: "What is the adjective: 'The weather is pleasant today.'",
+        options: ["weather", "is", "pleasant", "today"],
+        correct: "pleasant"
+    },
+    {
+        question: "Choose the adjective: 'This is a difficult task.'",
+        options: ["This", "is", "difficult", "task"],
+        correct: "difficult"
+    },
+    {
+        question: "Which is the adjective: 'The fast train arrived late.'",
+        options: ["fast", "train", "arrived", "late"],
+        correct: "fast"
+    },
+    {
+        question: "Find the adjective: 'He gave a short speech.'",
+        options: ["He", "gave", "short", "speech"],
+        correct: "short"
+    },
+    {
+        question: "What is the adjective: 'The flowers are colorful.'",
+        options: ["flowers", "are", "colorful", "The"],
+        correct: "colorful"
+    },
+    {
+        question: "Choose the adjective: 'She wore a shiny necklace.'",
+        options: ["She", "wore", "shiny", "necklace"],
+        correct: "shiny"
+    },
+    {
+        question: "Identify the adjective: 'The house is spacious.'",
+        options: ["house", "is", "spacious", "The"],
+        correct: "spacious"
+    },
+    {
+        question: "Which word is an adjective: 'The old man walked slowly'?",
+        options: ["old", "man", "walked", "slowly"],
+        correct: "old"
+    },
+    {
+        question: "Find the adjective: 'She has curly hair.'",
+        options: ["She", "has", "curly", "hair"],
+        correct: "curly"
+    },
+    {
+        question: "What is the adjective: 'The tall tree provides shade.'",
+        options: ["tall", "tree", "provides", "shade"],
+        correct: "tall"
+    },
+    {
+        question: "Choose the adjective: 'The dessert is sweet.'",
+        options: ["dessert", "is", "sweet", "The"],
+        correct: "sweet"
+    },
+    {
+        question: "Which is the adjective: 'The calm sea looked beautiful.'",
+        options: ["calm", "sea", "looked", "beautiful"],
+        correct: "calm"
+    },
+    {
+        question: "Find the adjective: 'The bright stars lit up the sky.'",
+        options: ["bright", "stars", "lit", "sky"],
+        correct: "bright"
+    },
+    {
+        question: "What is the adjective: 'The noisy children played outside.'",
+        options: ["noisy", "children", "played", "outside"],
+        correct: "noisy"
+    },
+    {
+        question: "Choose the adjective: 'The soft pillow helped me sleep.'",
+        options: ["soft", "pillow", "helped", "sleep"],
+        correct: "soft"
+    },
+    {
+        question: "Which is the adjective: 'The water is cold.'",
+        options: ["water", "is", "cold", "The"],
+        correct: "cold"
+    },
+    {
+        question: "Identify the adjective: 'The small dog barked loudly.'",
+        options: ["small", "dog", "barked", "loudly"],
+        correct: "small"
+    },
+    {
+        question: "What is the adjective: 'The light breeze felt refreshing.'",
+        options: ["light", "breeze", "felt", "refreshing"],
+        correct: "light"
+    },
+    {
+        question: "Find the adjective: 'She prefers fresh fruits.'",
+        options: ["She", "prefers", "fresh", "fruits"],
+        correct: "fresh"
+    },
+    {
+        question: "Which word is an adjective: 'The clever student answered quickly'?",
+        options: ["clever", "student", "answered", "quickly"],
+        correct: "clever"
+    },
+    {
+        question: "What is the adjective: 'The weather today is sunny.'",
+        options: ["weather", "today", "is", "sunny"],
+        correct: "sunny"
+    },
+    {
+        question: "Identify the adjective: 'She received a heartfelt message.'",
+        options: ["She", "received", "heartfelt", "message"],
+        correct: "heartfelt"
+    }
+
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    const questionEl = document.getElementById("question");
+    const optionsEl = document.getElementById("options");
+    const nextBtn = document.getElementById("next");
+    const scoreEl = document.getElementById("score");
+
+    function loadQuestion() {
+        const q = questions[currentQuestion];
+        questionEl.textContent = q.question;
+        optionsEl.innerHTML = "";
+
+        q.options.forEach(option => {
+            const button = document.createElement("button");
+            button.textContent = option;
+            button.className = "option";
+            button.onclick = () => checkAnswer(option);
+            optionsEl.appendChild(button);
+        });
+    }
+
+    function checkAnswer(selected) {
+        const q = questions[currentQuestion];
+        const buttons = document.querySelectorAll(".option");
+
+        buttons.forEach(button => {
+            if (button.textContent === q.correct) {
+                button.style.backgroundColor = "green";
+                button.style.color = "white";
+            } else {
+                button.style.backgroundColor = "red";
+                button.style.color = "white";
+            }
+            button.disabled = true;
+        });
+
+        if (selected === q.correct) {
+            score++;
+            scoreEl.textContent = `Score: ${score}`;
+        }
+    }
+
+    nextBtn.onclick = () => {
+        if (currentQuestion < questions.length - 1) {
+            currentQuestion++;
+            loadQuestion();
+        } else {
+            questionEl.textContent = "Quiz Completed!";
+            optionsEl.innerHTML = "";
+            nextBtn.disabled = true;
+        }
+    };
+
+    loadQuestion();
+</script>
+
+</body>
+</html>

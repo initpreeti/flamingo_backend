@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Sentence Structure</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sentence-structure.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">SentencePro</h1>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+                <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+  
+                <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+  
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Master Sentence Structure with Ease</h2>
+            <p>Learn to construct sentences correctly with engaging lessons and examples.</p>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section id="types" class="types">
+        <div class="container">
+            <h2>Types of Sentences</h2>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Simple Sentence ✨</h3>
+                    <p>A sentence with a single independent clause.</p>
+                    <p><strong>Example:</strong> The sun is shining.</p>
+                </div>
+                <div class="content-box">
+                    <h3>Compound Sentence 🔗</h3>
+                    <p>Two or more independent clauses joined by a conjunction.</p>
+                    <p><strong>Example:</strong> I wanted to play, but it started raining.</p>
+                </div>
+                <div class="content-box">
+                    <h3>Complex Sentence 🌀</h3>
+                    <p>An independent clause and one or more dependent clauses.</p>
+                    <p><strong>Example:</strong> Although it was late, he continued working.</p>
+                </div>
+                <div class="content-box">
+                    <h3>Declarative Sentence 📘</h3>
+                    <p>Make a statement or provide information.</p>
+                    <p><strong>Example:</strong> I enjoy reading books.</p>
+                </div>
+                <div class="content-box">
+                    <h3>Interrogative Sentence ❓</h3>
+                    <p>Ask a question.</p>
+                    <p><strong>Example:</strong> What is your favorite hobby?</p>
+                </div>
+                <div class="content-box">
+                    <h3>Imperative Sentence 🚦</h3>
+                    <p>Give commands or make requests.</p>
+                    <p><strong>Example:</strong> Please sit down.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2>More Examples</h2>
+            <ul>
+                <li><strong>Simple Sentence:</strong> The dog barked. 🐕</li>
+                <li><strong>Compound Sentence:</strong> She wanted to study, so she turned off the TV. 📺</li>
+                <li><strong>Complex Sentence:</strong> If you work hard, you will succeed. 💪</li>
+                <li><strong>Declarative Sentence:</strong> The earth revolves around the sun. 🌍</li>
+                <li><strong>Interrogative Sentence:</strong> How do you solve this problem? 🤔</li>
+                <li><strong>Imperative Sentence:</strong> Don't forget to submit your assignment. 📑</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SentencePro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='sentence-structure.js') }}"></script>
+</body>
+</html>

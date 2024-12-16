@@ -41,11 +41,11 @@
         <h3>Common Words</h3>
         <ul>
           <li>Hello <button onclick="playAudio('hello')">        Hear</button></li>
-          <audio src="audio/hello.mp3"></audio>
+          <audio id="audio-hello"  src="{{ url_for('static', filename='audio/hello.mp3') }}"></audio>
           <li>Goodbye <button onclick="playAudio('goodbye')">    Hear</button></li>
-          <audio src="audio/goodbye.mp3"></audio>
+          <audio  id="audio-goodbye" src="{{ url_for('static', filename='audio/goodbye.mp3') }}"></audio>
           <li>Thank You <button onclick="playAudio('thankyou')"> Hear</button></li>
-          <audio src="audio/thankyou.mp3"></audio>
+          <audio id="audio-thankyou" src="{{ url_for('static', filename='audio/thankyou.mp3') }}"></audio>
         </ul>
       </div>
 
@@ -54,11 +54,11 @@
         <h3>Objects</h3>
         <ul>
           <li>Book <button onclick="playAudio('book')">  Hear</button></li>
-          <audio src="audio/book.mp3"></audio>
+          <audio id="audio-book" src="{{ url_for('static', filename='audio/book.mp3') }}"></audio>
           <li>Pen <button onclick="playAudio('pen')">    Hear</button></li>
-          <audio src="audio/pen.mp3"></audio>
+          <audio id="audio-pen" src="{{ url_for('static', filename='audio/pen.mp3') }}"></audio>
           <li>Chair <button onclick="playAudio('chair')">Hear</button></li>
-          <audio src="audio/chair.mp3"></audio>
+          <audio id="audio-chair" src="{{ url_for('static', filename='audio/chair.mp3') }}"></audio>
         </ul>
       </div>
 
@@ -67,11 +67,11 @@
         <h3>Animals</h3>
         <ul>
           <li>Dog <button onclick="playAudio('dog')">  Hear</button></li>
-          <audio src="audio/dog.mp3"></audio>
+          <audio id="audio-dog" src="{{ url_for('static', filename='audio/dog.mp3') }}"></audio>
           <li>Cat <button onclick="playAudio('cat')">  Hear</button></li>
-          <audio src="audio/cat.mp3"></audio>
+          <audio id="audio-cat" src="{{ url_for('static', filename='audio/cat.mp3') }}"></audio>
           <li>Bird <button onclick="playAudio('bird')">Hear</button></li>
-          <audio src="audio/bird.mp3"></audio>
+          <audio id="audio-bird" src="{{ url_for('static', filename='audio/bird.mp3') }}"></audio>
         </ul>
       </div>
     </div>
@@ -82,7 +82,7 @@
       <br>
       <p>Take a quiz to test your understanding of these words.</p>
       <br>
-      <button  onclick="window.location.href= 'vocabulary-quiz.html'">Start Quiz</button>
+      <button> <a href="{{ url_for('vocabquiz') }}">Start Quiz</a></button>
       
     </div>
   </section>

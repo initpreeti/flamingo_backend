@@ -63,35 +63,33 @@
         <h2>Nouns and Pronouns 🔊</h2>
         <p>A noun is a word that represents a person, place, thing, or idea. Examples: *dog*, *city*, *happiness*.</p>
         <p>A pronoun is used in place of a noun. Examples: *he*, *she*, *it*.</p>
-        <button onclick="window.location.href='basic-grammar.html'">Learn More</button>
+        <button><a href="{{ url_for('basicgrammer') }}">Learn More</a></button>
       </div>
 
       <!-- Lesson 2 -->
       <div class="lesson">
         <h2>Verbs ✍️</h2>
         <p>A verb is an action word. Examples: *run*, *eat*, *study*. Learn how to use verbs in sentences.</p>
-        <button onclick= "window.location.href='basic-verb-quiz.html'">Learn More</button>
-      </div>
+        <button><a href="{{ url_for('basicverb') }}">Learn More</a></button>      </div>
 
       <!-- Lesson 3 -->
       <div class="lesson">
         <h2>Adjectives 🔆</h2>
         <p>Adjectives describe nouns. Examples: *beautiful*, *large*, *red*. Learn how to use adjectives effectively.</p>
-        <button onclick="window.location.href='basic-adjective.html'">Learn More</button>
-      </div>
+        <button><a href="{{ url_for('basicadjective') }}">Learn More</a></button>      </div>
 
       <!-- Lesson 4 -->
       <div class="lesson">
         <h2>Sentence Structure  📑</h2>
         <p>Learn how to form sentences using the basic structure: Subject + Verb + Object.</p>
-        <button onclick="alert('Lesson 4: Sentence Structure')">Learn More</button>
+        <button><a href="{{ url_for('scentencestructure') }}">Learn More</a></button>
       </div>
 
       <!-- Lesson 5 -->
       <div class="lesson">
         <h2>Articles 🧾</h2>
         <p>Learn the rules of using "A," "An," and "The" in sentences.</p>
-        <button onclick="alert('Lesson 5: Articles')">Learn More</button>
+        <button><a href="{{ url_for('basicarticels') }}">Learn More</a></button>
       </div>
     </section>
   </main>

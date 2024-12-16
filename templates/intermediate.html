@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intermediate Hindi to English Course</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='intermediate.css') }}">
+  <style>
+    a{
+      text-decoration: none;
+      color:white
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -41,17 +47,17 @@
         <li>
           <h4>Lesson 1: Basic Grammar</h4>
           <p>Learn the structure of English sentences with Hindi examples.</p>
-          <button onclick="window.location.href='grammar.html'">Start Lesson</button>
+          <button><a href="{{ url_for('grammer') }}">Start Lesson</a></button>
         </li>
         <li>
           <h4>Lesson 2: Common Conversations</h4>
           <p>Practice conversations like greeting people and asking directions.</p>
-          <button onclick="window.location.href='conversation.html'">Start Lesson</button>
+          <button><a href="{{ url_for('conversation') }}">Start Lesson</a></button>
         </li>
         <li>
           <h4>Lesson 3: Everyday Vocabulary</h4>
           <p>Learn words used in daily life, like cooking, shopping, and travel.</p>
-          <button onclick="window.location.href='everyday.html'">Start Lesson</button>
+          <button><a href="{{ url_for('everyday') }}">Start Lesson</a></button>
         </li>
       </ul>
     </section>
@@ -59,7 +65,7 @@
     <section class="quiz">
       <h3>Quiz</h3>
       <p>Test your knowledge with a short quiz after each lesson.</p>
-      <button onclick="window.location.href='intermediate-quiz.html'">Take Quiz</button>
+      <button><a href="{{ url_for('intermediatequiz') }}">Start Lesson</a></button>
     </section>
   </main>
 

@@ -49,13 +49,13 @@
           <h3>A</h3>
           <p><strong>Example:</strong> Apple</p>
           <button onclick="playAudio('a')">Hear Pronunciation</button>
-          <audio id="audio-a" src="audio/A.mp3"></audio>
+          <audio id="audio-a" src="{{ url_for('static', filename='audio/A.mp3') }}"></audio>
         </div>
         <div class="letter-card">
           <h3>B</h3>
           <p><strong>Example:</strong> Ball</p>
           <button onclick="playAudio('b')">Hear Pronunciation</button>
-          <audio id="audio-b" src="audio/B.mp3"></audio>
+          <audio id="audio-b" src="{{ url_for('static', filename='audio/B.mp3') }}"></audio>
         </div>
         <!-- Add more letters similarly -->
       </div>
@@ -71,23 +71,23 @@
           <h3>1</h3>
           <p><strong>Example:</strong> I have 1 apple.</p>
           <button onclick="playAudio('1')">Hear Pronunciation</button>
-          <audio id="audio-1" src="audio/1.mp3"></audio>
+          <audio id="audio-1" src="{{ url_for('static', filename='audio/1.mp3') }}"></audio>
         </div>
         <div class="number-card">
           <h3>2</h3>
           <p><strong>Example:</strong> I have 2 books.</p>
           <button onclick="playAudio('2')">Hear Pronunciation</button>
-          <audio id="audio-2" src="audio/2.mp3"></audio>
+          <audio id="audio-2" src="{{ url_for('static', filename='audio/2.mp3') }}"></audio>
         </div>
         <!-- Add more numbers similarly -->
       </div>
     </div>
 
     <!-- Quiz Section -->
-    <div class="quiz-section">
+    <div class="quiz-section" style="height: 8rem;">
       <h2>Test Your Knowledge!</h2>
-      <p>Take a short quiz to test your learning of the alphabet and numbers.</p>
-     <button onclick="window.location.href= 'alphabet-quiz.html '">Start Quiz</button>
+      <p style="margin-bottom: 4rem;">Take a short quiz to test your learning of the alphabet and numbers.</p>
+     <butto> <a href="{{ url_for('alphaquiz') }}" style="color: black; padding: 1rem; background-color: blue; border-radius: 1rem; ">Start Quiz</a></button>
     </div>
   </section>
 

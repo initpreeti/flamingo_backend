@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb Quiz - Flamingo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #4c1868;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+            
+
+        }
+        .left{
+            margin-left: 57rem;
+        }
+
+        .navbar a:hover {
+            color: #d5c2c2;
+            height: 3rem;
+            width: 6rem;
+            background-color: rgb(206, 180, 235);
+            padding:0.3rem;
+            border-radius: 10px;
+            border: 2px solid rgb(158, 25, 25);
+            color: black;
+        }
+        
+
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #68186d;
+        }
+
+        #quizBox {
+            margin-top: 1px;
+        }
+
+        .option {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            width: 100%;
+        }
+
+        .option:hover {
+            background-color: rgb(231, 195, 225);
+            border-color: rgb(226, 43, 116);
+        }
+
+        .option:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        #nextQuestion {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4c1868;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        #nextQuestion:hover {
+            background-color: #45a049;
+        }
+
+        #progress {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #timer {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        /* footer {
+            background-color: #4c1868;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        } -->
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .option, #nextQuestion {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <!-- <div class="logo">Flamingo</div> -->
+        <div class="links">
+           <span style="font-size: 1.5rem; font-weight:bold;">🦩Flamingo</span>
+            <span class="left"><a href="#">Home</a>
+                <a href="#">Chatboat</a></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Verb Quiz - Flamingo</h1>
+        <div id="quizBox">
+            <p id="question"></p>
+            <div id="options"></div>
+            <button id="nextQuestion">Next</button>
+            <p id="progress"></p>
+            <p id="timer"></p>
+        </div>
+    </div>
+
+    
+    <!-- <footer>
+        <p>&copy; 2024 Flamingo. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer> -->
+
+    <script>
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let timeLeft = 60; // 60 seconds for the quiz
+
+        const quizBox = document.getElementById("quizBox");
+        const questionText = document.getElementById("question");
+        const optionsContainer = document.getElementById("options");
+        const nextButton = document.getElementById("nextQuestion");
+        const progress = document.getElementById("progress");
+        const timer = document.getElementById("timer");
+
+        const questions = [
+            { question: "Which is an action verb?", options: ["Run", "Is", "The", "They"], correct: "Run" },
+            { question: "Identify the auxiliary verb: She can dance well.", options: ["She", "Can", "Dance", "Well"], correct: "Can" },
+            { question: "Which is a state-of-being verb?", options: ["Are", "Play", "Think", "Create"], correct: "Are" },
+            { question: "What is the verb in this sentence: He eats an apple?", options: ["He", "Eats", "An", "Apple"], correct: "Eats" },
+            { question: "Which is a helping verb?", options: ["Have", "Tree", "Car", "Run"], correct: "Have" },
+            // Add more questions here
+        ];
+
+        function loadQuestion() {
+            optionsContainer.innerHTML = "";
+            questionText.textContent = questions[currentQuestionIndex].question;
+
+            questions[currentQuestionIndex].options.forEach((optionText) => {
+                const option = document.createElement("button");
+                option.className = "option";
+                option.textContent = optionText;
+                option.addEventListener("click", () => checkAnswer(option));
+                optionsContainer.appendChild(option);
+            });
+
+            progress.textContent = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+        }
+
+        function checkAnswer(selectedOption) {
+            const correctAnswer = questions[currentQuestionIndex].correct;
+            const options = document.querySelectorAll(".option");
+
+            options.forEach((option) => {
+                if (option.textContent === correctAnswer) {
+                    option.style.backgroundColor = "green";
+                    option.style.color = "white";
+                } else {
+                    option.style.backgroundColor = "red";
+                    option.style.color = "white";
+                }
+                option.disabled = true;
+            });
+
+            if (selectedOption.textContent === correctAnswer) {
+                score++;
+            }
+        }
+
+        function updateTimer() {
+            timer.textContent = `Time left: ${timeLeft} seconds`;
+            timeLeft--;
+            if (timeLeft < 0) {
+                timer.textContent = "Time's up!";
+                quizBox.innerHTML = `<h2>Quiz Completed!</h2><p>Your Score: ${score}/${questions.length}</p>`;
+            }
+        }
+
+        nextButton.addEventListener("click", () => {
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                quizBox.innerHTML = `<h2>Quiz Completed!</h2><p>Your Score: ${score}/${questions.length}</p>`;
+            }
+        });
+
+        loadQuestion();
+        setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>

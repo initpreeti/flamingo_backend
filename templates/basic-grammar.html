@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamingo - Basic Grammar: Nouns and Pronouns</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            height: 100vh;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color:  #5A2A82;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top:0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            
+            background: #FF4081;
+            border-radius: 5px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            background-color: #ffdad9;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color:  #5A2A82;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box {
+            padding: 20px;
+            margin: 20px 0;
+            background: #f1f1f1;
+            border-left: 6px solid  #5A2A82;
+            border-radius: 8px;
+        }
+
+        .box h2 {
+            color:  #5A2A82;
+        }
+
+        .box p {
+            line-height: 1.6;
+        }
+
+        /* Quiz Section */
+        .quiz {
+            margin-top: 40px;
+        }
+
+        .quiz button {
+            background-color: #5A2A82;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .quiz button:hover {
+            background-color:  #5A2A82;
+        }
+
+        .quiz-results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+
+        }
+
+        .footer a {
+            color:  #5A2A82;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .content {
+                padding: 15px;
+            }
+
+            .quiz button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+        <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>🦩 Basic Grammar: Nouns and Pronouns</h1>
+        <p>Master the fundamentals of English grammar with comprehensive explanations, examples, and interactive quizzes.</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Nouns Section -->
+        <div class="box">
+            <h2>What are Nouns?</h2>
+            <p>A noun is a word that names a person, place, thing, or idea. Nouns are fundamental in forming sentences and are categorized into different types based on their usage.</p>
+            <h3>Types of Nouns:</h3>
+            <ul>
+                <li><strong>Common Nouns:</strong> These refer to general items rather than specific ones. <em>Examples:</em> dog, city, book.</li>
+                <li><strong>Proper Nouns:</strong> These name specific people, places, or things. Always capitalized. <em>Examples:</em> India, Shakespeare, Eiffel Tower.</li>
+                <li><strong>Concrete Nouns:</strong> These are things you can perceive with your senses. <em>Examples:</em> flower, car, music.</li>
+                <li><strong>Abstract Nouns:</strong> These represent ideas, qualities, or feelings. <em>Examples:</em> love, freedom, happiness.</li>
+                <li><strong>Collective Nouns:</strong> These describe groups or collections. <em>Examples:</em> team, herd, jury.</li>
+            </ul>
+            <h3>Examples in Sentences:</h3>
+            <div class="example">1. The <strong>dog</strong> barked loudly. (Common Noun)<br>2. <strong>Paris</strong> is a beautiful city. (Proper Noun)</div>
+        </div>
+
+        <!-- Quiz for Nouns -->
+        <div class="quiz">
+            <h3>Quiz: Test Your Knowledge on Nouns</h3>
+            <p id="noun-question">1. Identify the proper noun: "Mary went to the market."</p>
+            <button onclick="checkNounAnswer('Mary')">Mary</button>
+            <button onclick="checkNounAnswer('market')">market</button>
+            <button onclick="checkNounAnswer('went')">went</button>
+            <div class="quiz-results" id="noun-results"></div>
+        </div>
+
+        <!-- Pronouns Section -->
+        <div class="box">
+            <h2>What are Pronouns?</h2>
+            <p>A pronoun is a word used to replace a noun to avoid repetition and simplify sentences. They are essential for effective communication.</p>
+            <h3>Types of Pronouns:</h3>
+            <ul>
+                <li><strong>Subject Pronouns:</strong> Replace the subject of the sentence. <em>Examples:</em> I, you, he, she, we, they.</li>
+                <li><strong>Object Pronouns:</strong> Replace the object of the sentence. <em>Examples:</em> me, him, her, us, them.</li>
+                <li><strong>Possessive Pronouns:</strong> Indicate ownership. <em>Examples:</em> mine, yours, his, hers, ours, theirs.</li>
+                <li><strong>Reflexive Pronouns:</strong> Refer back to the subject. <em>Examples:</em> myself, yourself, himself.</li>
+                <li><strong>Demonstrative Pronouns:</strong> Point to specific things. <em>Examples:</em> this, that, these, those.</li>
+            </ul>
+            <h3>Examples in Sentences:</h3>
+            <div class="example">1. <strong>She</strong> loves reading books. (Subject Pronoun)<br>2. This book is <strong>mine</strong>. (Possessive Pronoun)</div>
+        </div>
+
+        <!-- Quiz for Pronouns -->
+        <div class="quiz">
+            <h3>Quiz: Test Your Knowledge on Pronouns</h3>
+            <p id="pronoun-question">1. Replace "The cat" with a pronoun: "The cat is sleeping."</p>
+            <button onclick="checkPronounAnswer('It')">It</button>
+            <button onclick="checkPronounAnswer('They')">They</button>
+            <button onclick="checkPronounAnswer('We')">We</button>
+            <div class="quiz-results" id="pronoun-results"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Flamingo. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+    <script>
+
+        function checkNounAnswer(answer) {
+            const nounResults = document.getElementById('noun-results');
+            if (answer === 'Mary') {
+                nounResults.textContent = 'Correct! Mary is a proper noun.';
+                nounResults.style.color = 'green';
+            } else {
+                nounResults.textContent = 'Incorrect. Try again!';
+                nounResults.style.color = 'red';
+            }
+        }
+
+        function checkPronounAnswer(answer) {
+            const pronounResults = document.getElementById('pronoun-results');
+            if (answer === 'It') {
+                pronounResults.textContent = 'Correct! It is the correct pronoun.';
+                pronounResults.style.color = 'green';
+            } else {
+                pronounResults.textContent = 'Incorrect. Try again!';
+                pronounResults.style.color = 'red';
+            }
+        }
+    </script> 
+    
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dining at a Restaurant - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='scenario-dining.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <!-- <header>
+    <nav>
+      <div class="logo">Flamingo</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header> -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+  <!-- Dining Scenario Section -->
+  <section class="scenario-content">
+    <h1>Dining at a Restaurant</h1>
+    <p>Learn how to order food, interact with restaurant staff, and more in English. This module covers key phrases, vocabulary, and dialogues for dining out.</p>
+
+    <!-- Vocabulary Section -->
+    <div class="vocabulary">
+      <h2>Key Vocabulary</h2>
+      <ul>
+        <li><strong>Menu:</strong> A list of food and drinks offered by the restaurant.</li>
+        <li><strong>Waiter/Waitress:</strong> The person who serves food and drinks.</li>
+        <li><strong>Order:</strong> To request food or drink.</li>
+        <li><strong>Bill/Check:</strong> The total amount to be paid for the meal.</li>
+        <li><strong>Reservation:</strong> Booking a table in advance.</li>
+      </ul>
+    </div>
+
+    <!-- Dialogue Practice Section -->
+    <div class="dialogues">
+      <h2>Sample Dialogues</h2>
+      <p><strong>Customer:</strong> Can I see the menu, please?</p>
+      <p><strong>Waiter:</strong> Of course! Here is the menu. What would you like to order?</p>
+      <p><strong>Customer:</strong> I would like to have the grilled chicken and a glass of water.</p>
+      <p><strong>Waiter:</strong> Sure! Would you like any appetizers with that?</p>
+    </div>
+
+    <!-- Interactive Practice Section -->
+    <div class="practice">
+      <h2>Interactive Practice</h2>
+      <p><strong>Question:</strong> What would you say if you wanted to ask for the bill?</p>
+      <ol>
+        <li><button onclick="checkAnswer('wrong')">"Can I have the menu, please?"</button></li>
+        <li><button onclick="checkAnswer('wrong')">"What’s for dessert?"</button></li>
+        <li><button onclick="checkAnswer('correct')">"Can I get the bill, please?"</button></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer> -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+  <!-- JavaScript for Quiz -->
+  <script>
+    function checkAnswer(answer) {
+      if (answer === 'correct') {
+        alert('Correct! Well done.');
+      } else {
+        alert('Oops! Try again.');
+      }
+    }
+  </script>
+</body>
+</html>

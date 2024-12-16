@@ -86,7 +86,69 @@ def lesson():
 def reallife():
     return render_template('/real-life-scenarios.html')
 
+@app.route('/alphaquiz')
+def alphaquiz():
+    return render_template('/alphabet-quiz.html')
 
+@app.route('/vocabquiz')
+def vocabquiz():
+    return render_template('/vocabulary-quiz.html')
+
+@app.route('/basicgrammer')
+def basicgrammer():
+    return render_template('/basic-grammar.html')
+
+@app.route('/basicverb')
+def basicverb():
+    return render_template('/basic-verb.html')
+
+@app.route('/basicatjective')
+def basicadjective():
+    return render_template('/basic-adjective.html')
+
+@app.route('/scenario-dining')
+def scenariodining():
+    return render_template('/scenario-dining.html')
+
+@app.route('/scenariomarket')
+def scenariomarket():
+    return render_template('/scenario-market.html')
+
+@app.route('/scenariomeeting')
+def scenariomeeting():
+    return render_template('/scenario-meeting-new.html')
+
+@app.route('/scenarioshooping')
+def scenarioshooping():
+    return render_template('/scenario-shopping.html')
+
+@app.route('/scenariotravel')
+def scenariotravel():
+    return render_template("/scenario-travel.html")
+
+@app.route('/scenario-traveling')
+def scenariotraveling():
+    return render_template('/scenario-traveling.html')
+
+@app.route('/sentence-structure')
+def scentencestructure():
+    return render_template('/sentence-structure.html')
+
+@app.route('/basicarticels')
+def basicarticels():
+    return render_template('/basic-articles.html')
+
+@app.route('/conversation')
+def conversation():
+    return render_template('/conversation.html')
+
+@app.route('/everyday')
+def everyday():
+    return render_template('/everyday.html')
+
+@app.route('/intermediate-quiz')
+def intermediatequiz():
+    return render_template('/intermediate-quiz.html')
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
