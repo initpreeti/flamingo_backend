@@ -174,6 +174,10 @@ def sentencestruct():
 def testmaster():
     return render_template('/tensesmastery.html')
 
+@app.route('/practice')
+def practice():
+    return render_template('/practice-test.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
