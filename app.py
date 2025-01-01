@@ -178,6 +178,13 @@ def testmaster():
 def practice():
     return render_template('/practice-test.html')
 
+@app.route('/pronounciation')
+def pronounciation():
+    return render_template('/pronunciation-tips.html')
+
+@app.route('advance')
+def advance():
+    return render_template('/advance punctuation.html')
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
