@@ -182,9 +182,13 @@ def practice():
 def pronounciation():
     return render_template('/pronunciation-tips.html')
 
-@app.route('advance')
-def advance():
-    return render_template('/advance punctuation.html')
+# @app.route('advance')
+# def advance():
+    # return render_template('/advance punctuation.html')
+
+@app.route('/writing')
+def writing():
+    return render_template('/writing-practice.html')
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
@@ -209,7 +213,7 @@ def contact():
 
     # Store the referrer URL in the session
     session['referrer'] = request.referrer
-    return render_template('contact.html')  # Render the contact.html page
+    return render_template('/contact.html')  # Render the contact.html page
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
