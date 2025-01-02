@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    margin: 20px 0;
+}
+
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #4B0082;;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 1.5cm;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #4B0082;;
+}
+
+/* Header Section */
+header {
+    margin-top: 60px; /* To avoid overlap with the navbar */
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Example Box Styling */
+.example-box {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e8f7f9;
+    border-radius: 5px;
+}
+
+.example-box p {
+    font-size: 18px;
+}
+
+/* Exercises Section */
+#exercises {
+    background-color: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+}
+
+.exercise {
+    margin: 20px 0;
+}
+
+.exercise label {
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4B0082;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4B0082;;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4B0082;;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .example-box p, .exercise label {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 20px;
+    }
+}

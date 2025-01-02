@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* header {
+    background-color: #4c1d95;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .login-btn {
+    background-color: #fb7185;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  } */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #5A2A82;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+header nav ul li a:hover {
+    background: #FF4081;
+    border-radius: 5px;
+}
+header .login-btn {
+    background: #FF4081;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    color: #4c1d95;
+    margin-bottom: 0.5rem;
+  }
+  
+  .lesson-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .lesson {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lesson h2 {
+    color: #4c1d95;
+  }
+  
+  .lesson p {
+    color: #555;
+  }
+  
+  .lesson button {
+    margin-top: 1rem;
+    background-color: #4c1d95;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .lesson button:hover {
+    background-color: #6d28d9;
+  }
+  
+  /* Footer */
+  /* footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4c1d95;
+    color: white;
+  }
+  
+  .social-links {
+    margin-top: 0.5rem;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  } */
+   /* Footer */
+footer {
+  background: #5A2A82;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 0px;
+}
+footer .social-links li a {
+  color: #FF4081;
+  text-decoration: none;
+  font-weight: bold;
+}
+  

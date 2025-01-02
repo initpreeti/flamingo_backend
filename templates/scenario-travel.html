@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='scenario-travel.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <!-- <header>
+    <nav>
+      <div class="logo">Flamingo</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header> -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  <!-- Travel Scenario Section -->
+   <br>
+   <br>
+   <br>
+   <br>
+  <section class="scenario-content">
+    <h1>Travel English</h1>
+    <p>Learn how to communicate effectively while traveling. This module covers vocabulary, useful phrases, and sample dialogues for various travel situations.</p>
+
+    <!-- Key Vocabulary Section -->
+    <div class="vocabulary">
+      <h2>Key Vocabulary</h2>
+      <ul>
+        <li><strong>Ticket:</strong> A pass or document needed for travel (e.g., flight ticket, train ticket).</li>
+        <li><strong>Passport:</strong> An official document needed to travel internationally.</li>
+        <li><strong>Luggage:</strong> Bags or suitcases used to carry personal belongings.</li>
+        <li><strong>Departure:</strong> The act of leaving a place, typically used for flights and trains.</li>
+        <li><strong>Arrival:</strong> Reaching a destination after traveling.</li>
+      </ul>
+    </div>
+
+    <!-- Sample Dialogues Section -->
+    <div class="dialogues">
+      <h2>Sample Dialogues</h2>
+      <p><strong>Traveler:</strong> Hi, can I get a one-way ticket to New York?</p>
+      <p><strong>Ticket Agent:</strong> Sure! What time would you like to depart?</p>
+      <p><strong>Traveler:</strong> I would like to leave at 10 AM, please.</p>
+      <p><strong>Ticket Agent:</strong> Okay, here’s your ticket. Your departure gate is 5B.</p>
+    </div>
+
+    <!-- Travel Phrases Section -->
+    <div class="travel-phrases">
+      <h2>Useful Travel Phrases</h2>
+      <ul>
+        <li><strong>Where is the nearest airport?</strong></li>
+        <li><strong>How do I get to the train station?</strong></li>
+        <li><strong>Can I have the bill, please?</strong></li>
+        <li><strong>What time does the flight depart?</strong></li>
+      </ul>
+    </div>
+
+    <!-- Interactive Practice Section -->
+    <div class="practice">
+      <h2>Interactive Practice</h2>
+      <p><strong>Question:</strong> Which phrase would you use to ask for directions to the nearest bus stop?</p>
+      <ol>
+        <li><button onclick="checkAnswer('wrong')">"How much is the train ticket?"</button></li>
+        <li><button onclick="checkAnswer('correct')">"How do I get to the bus stop?"</button></li>
+        <li><button onclick="checkAnswer('wrong')">"Where is the nearest hotel?"</button></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer> -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+  <!-- JavaScript for Quiz -->
+  <script>
+    function checkAnswer(answer) {
+      if (answer === 'correct') {
+        alert('Correct! Well done.');
+      } else {
+        alert('Oops! Try again.');
+      }
+    }
+  </script>
+</body>
+</html>

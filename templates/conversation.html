@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Conversations</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='conversation.css') }}">
+</head>
+<body>
+  <!-- <header>
+    <h1>Flamingo</h1>
+    <nav>
+      <ul>
+        <li><a href="#greetings">Greetings</a></li>
+        <li><a href="#shopping">Shopping</a></li>
+        <li><a href="#directions">Directions</a></li>
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#plans">Making Plans</a></li>
+        <li><a href="#doctor">At the Doctor</a></li>
+      </ul>
+    </nav>
+  </header> -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <main>
+    <!-- Greetings Section -->
+    <section id="greetings">
+      <h2>Greetings and Introductions</h2>
+      <p><b>Example:</b> Hello! How are you?</p>
+      <p><b>Key Phrases:</b> Good morning, Nice to meet you.</p>
+    </section>
+
+    <!-- Shopping Section -->
+    <section id="shopping">
+      <h2>Shopping Conversations</h2>
+      <p><b>Example:</b> How much does this cost?</p>
+      <p><b>Key Phrases:</b> I am looking for, Where is the billing counter?</p>
+    </section>
+
+    <!-- Directions Section -->
+    <section id="directions">
+      <h2>Asking for Directions</h2>
+      <p><b>Example:</b> Can you tell me how to get to the nearest bus stop?</p>
+      <p><b>Key Phrases:</b> Turn left/right, It’s straight ahead.</p>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section id="restaurant">
+      <h2>Ordering Food at a Restaurant</h2>
+      <p><b>Example:</b> I would like to order a pizza.</p>
+      <p><b>Key Phrases:</b> What’s the special for today?</p>
+    </section>
+
+    <!-- Making Plans Section -->
+    <section id="plans">
+      <h2>Making Plans with Friends</h2>
+      <p><b>Example:</b> Do you want to go to the movies this weekend?</p>
+      <p><b>Key Phrases:</b> What time works for you?</p>
+    </section>
+
+    <!-- Doctor Section -->
+    <section id="doctor">
+      <h2>At the Doctor's Office</h2>
+      <p><b>Example:</b> I have a headache and a fever.</p>
+      <p><b>Key Phrases:</b> I’d like to book an appointment.</p>
+    </section>
+  </main>
+
+  <!-- <footer>
+    <p>© 2024 Flamingo Language Learning</p>
+  </footer> -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

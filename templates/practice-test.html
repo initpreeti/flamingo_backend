@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Practice Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='practice-test.css') }}">
+  
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('user_home') }}">Home</a></li>
+            <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+            <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Grammar Practice Test</h1>
+            <p>Test your grammar knowledge with interactive quizzes. Select the correct answers and check your results!</p>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <div class="container">
+            <h2>Test Your Knowledge</h2>
+            <form id="quizForm">
+                <!-- Questions 1-30 -->
+                <div class="question">
+                    <label>1. Choose the correct form: "He ____ to school every day." (Present Simple)</label><br>
+                    <input type="radio" name="q1" value="go"> Go
+                    <input type="radio" name="q1" value="goes"> Goes
+                    <input type="radio" name="q1" value="is going"> Is going
+                </div>
+
+                <div class="question">
+                    <label>2. Choose the correct form: "I ____ just eaten lunch." (Present Perfect)</label><br>
+                    <input type="radio" name="q2" value="have"> Have
+                    <input type="radio" name="q2" value="am"> Am
+                    <input type="radio" name="q2" value="was"> Was
+                </div>
+
+                <div class="question">
+                    <label>3. Choose the correct form: "They ____ to the park last weekend." (Past Simple)</label><br>
+                    <input type="radio" name="q3" value="went"> Went
+                    <input type="radio" name="q3" value="go"> Go
+                    <input type="radio" name="q3" value="are going"> Are going
+                </div>
+
+                <div class="question">
+                    <label>4. Choose the correct form: "She ____ to the store tomorrow." (Future Simple)</label><br>
+                    <input type="radio" name="q4" value="go"> Go
+                    <input type="radio" name="q4" value="will go"> Will go
+                    <input type="radio" name="q4" value="is going"> Is going
+                </div>
+
+                <div class="question">
+                    <label>5. Choose the correct form: "I ____ waiting for the bus." (Present Continuous)</label><br>
+                    <input type="radio" name="q5" value="am"> Am
+                    <input type="radio" name="q5" value="is"> Is
+                    <input type="radio" name="q5" value="was"> Was
+                </div>
+
+                <!-- Repeat the structure above for the remaining 25 questions -->
+
+                <div class="question">
+                    <label>6. Choose the correct form: "By the time you arrive, I ____ my homework." (Future Perfect)</label><br>
+                    <input type="radio" name="q6" value="have finished"> Have finished
+                    <input type="radio" name="q6" value="will finish"> Will finish
+                    <input type="radio" name="q6" value="will have finished"> Will have finished
+                </div>
+
+                <form id="quizForm">
+                    <!-- Question 1 -->
+                    <div class="question">
+                        <label>1. Choose the correct form: "He ____ to school every day." (Present Simple)</label><br>
+                        <input type="radio" name="q1" value="go"> Go
+                        <input type="radio" name="q1" value="goes"> Goes
+                        <input type="radio" name="q1" value="is going"> Is going
+                    </div>
+                
+                    <!-- Question 2 -->
+                    <div class="question">
+                        <label>2. Choose the correct form: "I ____ just eaten lunch." (Present Perfect)</label><br>
+                        <input type="radio" name="q2" value="have"> Have
+                        <input type="radio" name="q2" value="am"> Am
+                        <input type="radio" name="q2" value="was"> Was
+                    </div>
+                
+                    <!-- Question 3 -->
+                    <div class="question">
+                        <label>3. Choose the correct form: "They ____ to the park last weekend." (Past Simple)</label><br>
+                        <input type="radio" name="q3" value="went"> Went
+                        <input type="radio" name="q3" value="go"> Go
+                        <input type="radio" name="q3" value="are going"> Are going
+                    </div>
+                
+                    <!-- Question 4 -->
+                    <div class="question">
+                        <label>4. Choose the correct form: "She ____ to the store tomorrow." (Future Simple)</label><br>
+                        <input type="radio" name="q4" value="go"> Go
+                        <input type="radio" name="q4" value="will go"> Will go
+                        <input type="radio" name="q4" value="is going"> Is going
+                    </div>
+                
+                    <!-- Question 5 -->
+                    <div class="question">
+                        <label>5. Choose the correct form: "I ____ waiting for the bus." (Present Continuous)</label><br>
+                        <input type="radio" name="q5" value="am"> Am
+                        <input type="radio" name="q5" value="is"> Is
+                        <input type="radio" name="q5" value="was"> Was
+                    </div>
+                
+                    <!-- Question 6 -->
+                    <div class="question">
+                        <label>6. Choose the correct form: "By the time you arrive, I ____ my homework." (Future Perfect)</label><br>
+                        <input type="radio" name="q6" value="have finished"> Have finished
+                        <input type="radio" name="q6" value="will finish"> Will finish
+                        <input type="radio" name="q6" value="will have finished"> Will have finished
+                    </div>
+                
+                    <!-- Question 7 -->
+                    <div class="question">
+                        <label>7. Choose the correct form: "They ____ in the park at the moment." (Present Continuous)</label><br>
+                        <input type="radio" name="q7" value="play"> Play
+                        <input type="radio" name="q7" value="are playing"> Are playing
+                        <input type="radio" name="q7" value="will play"> Will play
+                    </div>
+                
+                    <!-- Question 8 -->
+                    <div class="question">
+                        <label>8. Choose the correct form: "I ____ to the gym yesterday." (Past Simple)</label><br>
+                        <input type="radio" name="q8" value="go"> Go
+                        <input type="radio" name="q8" value="went"> Went
+                        <input type="radio" name="q8" value="am going"> Am going
+                    </div>
+                
+                    <!-- Question 9 -->
+                    <div class="question">
+                        <label>9. Choose the correct form: "She ____ a book right now." (Present Continuous)</label><br>
+                        <input type="radio" name="q9" value="read"> Read
+                        <input type="radio" name="q9" value="is reading"> Is reading
+                        <input type="radio" name="q9" value="reads"> Reads
+                    </div>
+                
+                    <!-- Question 10 -->
+                    <div class="question">
+                        <label>10. Choose the correct form: "We ____ to the beach every summer." (Present Simple)</label><br>
+                        <input type="radio" name="q10" value="go"> Go
+                        <input type="radio" name="q10" value="went"> Went
+                        <input type="radio" name="q10" value="are going"> Are going
+                    </div>
+                
+                    <!-- Question 11 -->
+                    <div class="question">
+                        <label>11. Choose the correct form: "He ____ his homework already." (Present Perfect)</label><br>
+                        <input type="radio" name="q11" value="did"> Did
+                        <input type="radio" name="q11" value="has done"> Has done
+                        <input type="radio" name="q11" value="is doing"> Is doing
+                    </div>
+                
+                    <!-- Question 12 -->
+                    <div class="question">
+                        <label>12. Choose the correct form: "I ____ working when you called me." (Past Continuous)</label><br>
+                        <input type="radio" name="q12" value="was"> Was
+                        <input type="radio" name="q12" value="were"> Were
+                        <input type="radio" name="q12" value="am"> Am
+                    </div>
+                
+                    <!-- Question 13 -->
+                    <div class="question">
+                        <label>13. Choose the correct form: "She ____ a new car next week." (Future Simple)</label><br>
+                        <input type="radio" name="q13" value="buy"> Buy
+                        <input type="radio" name="q13" value="will buy"> Will buy
+                        <input type="radio" name="q13" value="is buying"> Is buying
+                    </div>
+                
+                    <!-- Question 14 -->
+                    <div class="question">
+                        <label>14. Choose the correct form: "They ____ TV right now." (Present Continuous)</label><br>
+                        <input type="radio" name="q14" value="watch"> Watch
+                        <input type="radio" name="q14" value="are watching"> Are watching
+                        <input type="radio" name="q14" value="watched"> Watched
+                    </div>
+                
+                    <!-- Question 15 -->
+                    <div class="question">
+                        <label>15. Choose the correct form: "I ____ going to the cinema tomorrow." (Future Continuous)</label><br>
+                        <input type="radio" name="q15" value="am"> Am
+                        <input type="radio" name="q15" value="will"> Will
+                        <input type="radio" name="q15" value="was"> Was
+                    </div>
+                
+                    <!-- Question 16 -->
+                    <div class="question">
+                        <label>16. Choose the correct form: "She ____ to the store every day." (Present Simple)</label><br>
+                        <input type="radio" name="q16" value="goes"> Goes
+                        <input type="radio" name="q16" value="going"> Going
+                        <input type="radio" name="q16" value="go"> Go
+                    </div>
+                
+                    <!-- Question 17 -->
+                    <div class="question">
+                        <label>17. Choose the correct form: "We ____ not finished our project yet." (Present Perfect)</label><br>
+                        <input type="radio" name="q17" value="have"> Have
+                        <input type="radio" name="q17" value="has"> Has
+                        <input type="radio" name="q17" value="did"> Did
+                    </div>
+                
+                    <!-- Question 18 -->
+                    <div class="question">
+                        <label>18. Choose the correct form: "I ____ to see him yesterday." (Past Simple)</label><br>
+                        <input type="radio" name="q18" value="seen"> Seen
+                        <input type="radio" name="q18" value="saw"> Saw
+                        <input type="radio" name="q18" value="seeing"> Seeing
+                    </div>
+                
+                    <!-- Question 19 -->
+                    <div class="question">
+                        <label>19. Choose the correct form: "He ____ his keys right now." (Present Continuous)</label><br>
+                        <input type="radio" name="q19" value="is losing"> Is losing
+                        <input type="radio" name="q19" value="loses"> Loses
+                        <input type="radio" name="q19" value="has lost"> Has lost
+                    </div>
+                
+                    <!-- Question 20 -->
+                    <div class="question">
+                        <label>20. Choose the correct form: "They ____ studying when I visited them." (Past Continuous)</label><br>
+                        <input type="radio" name="q20" value="were"> Were
+                        <input type="radio" name="q20" value="are"> Are
+                        <input type="radio" name="q20" value="was"> Was
+                    </div>
+                
+                    <!-- Add additional questions 21 to 50 in the same structure -->
+                </form>
+                
+
+                <!-- Continue similarly for questions 7 to 30 -->
+
+                <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+            </form>
+
+            <div id="results"></div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Grammar Practice Tests. All Rights Reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='practice-test.js') }}"></script>
+</body>
+</html>

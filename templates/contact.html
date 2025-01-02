@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,28 +8,37 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+     <!--  Header section -->
+     <header>
         <div class="container">
             <h1 class="logo">Flamingo</h1>
-            <nav>
+            <!-- <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">Chatbot</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="#" class="login-btn">Login</a></li>
-                </ul>
+
+                    <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+                    <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+    
+                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+    
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    
+
+                </ul> -->
+
             </nav>
         </div>
     </header>
 
-    <!-- Contact Form Section -->
     <div class="container">
+        <div class="background">
+           
+
+        </div>
         <div class="contact-form">
             <div class="form-box">
                 <h2>Send us a message</h2>
-                <form action="/contact" method="POST">
+                <form action="#" method="POST">
                     <input type="text" name="name" placeholder="Enter your name" required>
                     <input type="email" name="email" placeholder="Enter your email" required>
                     <input type="text" name="phone" placeholder="Enter your phone number" required>

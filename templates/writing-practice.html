@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Practice Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='writing-practice.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>Writing Practice Page ✍️</h1>
+  </header>
+
+  <main>
+    <div id="questions-container"></div>
+    <div class="improving-tips">
+      <h3>Improving Tips:</h3>
+      <ul id="tips-list">
+        <!-- Tips will be added here dynamically -->
+      </ul>
+    </div>
+    <button id="submit-button">Submit 📝</button>
+  </main>
+
+  <footer>
+    <p>Writing Practice Page - 2024. All rights reserved.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='writing-practice.js') }}"></script>
+</body>
+</html>

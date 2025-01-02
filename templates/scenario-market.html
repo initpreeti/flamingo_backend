@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>At the Market - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='scenario-market.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <!-- <header>
+    <nav>
+      <div class="logo">Flamingo</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header> -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<br>
+<br>
+<br>
+  <!-- At the Market Scenario Section -->
+  <section class="scenario-content">
+    <h1>At the Market</h1>
+    <p>Learn essential English phrases for shopping at the market. Whether you're asking about prices, looking for items, or making a purchase, we've got you covered!</p>
+
+    <!-- Key Vocabulary Section -->
+    <div class="vocabulary">
+      <h2>Key Vocabulary</h2>
+      <ul>
+        <li><strong>How much is this?:</strong> A common question to ask about the price of an item.</li>
+        <li><strong>I’ll take it:</strong> A phrase used when you want to buy something.</li>
+        <li><strong>Can you give me a discount?:</strong> A question asking for a lower price.</li>
+        <li><strong>Do you have...?:</strong> Used when asking for a specific item (e.g., "Do you have apples?").</li>
+        <li><strong>Where can I find...?:</strong> Used to ask for the location of items in the market.</li>
+      </ul>
+    </div>
+
+    <!-- Sample Dialogues Section -->
+    <div class="dialogues">
+      <h2>Sample Dialogues</h2>
+      <p><strong>Customer:</strong> How much is this watermelon?</p>
+      <p><strong>Seller:</strong> It’s $5 for one.</p>
+      <p><strong>Customer:</strong> Can you give me a discount?</p>
+      <p><strong>Seller:</strong> I can lower the price to $4 for you.</p>
+      <p><strong>Customer:</strong> Great! I’ll take it.</p>
+      <p><strong>Customer:</strong> Do you have any bananas?</p>
+      <p><strong>Seller:</strong> Yes, they are on the next stall.</p>
+    </div>
+
+    <!-- Interactive Practice Section -->
+    <div class="practice">
+      <h2>Interactive Practice</h2>
+      <p><strong>Question:</strong> How would you ask for the price of apples in the market?</p>
+      <ol>
+        <li><button onclick="checkAnswer('wrong')">"What time does the market close?"</button></li>
+        <li><button onclick="checkAnswer('correct')">"How much are the apples?"</button></li>
+        <li><button onclick="checkAnswer('wrong')">"Can I have a bag?"</button></li>
+      </ol>
+    </div>
+
+    <!-- Cultural Context Section -->
+    <div class="cultural-context">
+      <h2>Cultural Context</h2>
+      <p><strong>Tip:</strong> In many markets, especially in places like India, bargaining is common. You can often negotiate the price with the seller, especially for items like fruits and vegetables.</p>
+      <p><strong>Tip:</strong> In other countries, markets may have fixed prices, and asking for a discount might be less common. It’s always good to ask politely.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer> -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+  <!-- JavaScript for Quiz -->
+  <script>
+    function checkAnswer(answer) {
+      if (answer === 'correct') {
+        alert('Correct! Well done.');
+      } else {
+        alert('Oops! Try again.');
+      }
+    }
+  </script>
+</body>
+</html>

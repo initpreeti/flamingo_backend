@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everyday Vocabulary</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='everyday.css') }}">
+  <script src="everyday.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Everyday Vocabulary</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+        <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Food & Drinks Section -->
+    <section id="food">
+      <h2>Food & Drinks</h2>
+      <ul>
+        <li><b>Apple:</b> Example: I eat an apple every day.</li>
+        <li><b>Banana:</b> Example: Bananas are rich in potassium.</li>
+        <li><b>Orange:</b> Example: Oranges are a great source of Vitamin C.</li>
+        <li><b>Milk:</b> Example: I drink milk in the morning.</li>
+        <li><b>Breakfast:</b> Example: Breakfast is the most important meal of the day.</li>
+        <li><b>Water:</b> Example: I drink 8 glasses of water daily.</li>
+        <li><b>Juice:</b> Example: Fresh orange juice is healthy.</li>
+        <li><b>Rice:</b> Example: Rice is a staple food in many countries.</li>
+        <li><b>Bread:</b> Example: Whole-grain bread is nutritious.</li>
+        <li><b>Egg:</b> Example: Boiled eggs are a quick snack.</li>
+      </ul>
+    </section>
+
+    <!-- Travel Section -->
+    <section id="travel">
+      <h2>Travel</h2>
+      <ul>
+        <li><b>Bus:</b> Example: I take a bus to work.</li>
+        <li><b>Train:</b> Example: The train is always on time.</li>
+        <li><b>Taxi:</b> Example: We booked a taxi to the hotel.</li>
+        <li><b>Airport:</b> Example: The airport is crowded today.</li>
+        <li><b>Hotel:</b> Example: Our hotel has a sea view.</li>
+        <li><b>Map:</b> Example: Always carry a map while traveling.</li>
+        <li><b>Passport:</b> Example: Don't forget your passport.</li>
+        <li><b>Luggage:</b> Example: Pack your luggage wisely.</li>
+        <li><b>Flight:</b> Example: Our flight departs at 5 PM.</li>
+        <li><b>Journey:</b> Example: The journey was long but enjoyable.</li>
+      </ul>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+      <h2>Work</h2>
+      <ul>
+        <li><b>Office:</b> Example: My office is near the metro station.</li>
+        <li><b>Meeting:</b> Example: We have a meeting at 3 PM.</li>
+        <li><b>Task:</b> Example: I finished my tasks on time.</li>
+        <li><b>Manager:</b> Example: My manager is very supportive.</li>
+        <li><b>Salary:</b> Example: We receive our salary at the end of the month.</li>
+        <li><b>Team:</b> Example: Our team works well together.</li>
+        <li><b>Colleague:</b> Example: My colleagues are helpful.</li>
+        <li><b>Deadline:</b> Example: The project deadline is next week.</li>
+        <li><b>Client:</b> Example: The client appreciated our work.</li>
+        <li><b>Report:</b> Example: I prepared the sales report yesterday.</li>
+      </ul>
+    </section>
+
+    <!-- Sports & Fitness Section -->
+    <section id="sports">
+      <h2>Sports & Fitness</h2>
+      <ul>
+        <li><b>Football:</b> Example: I love playing football on weekends.</li>
+        <li><b>Running:</b> Example: Running keeps me fit.</li>
+        <li><b>Gym:</b> Example: I go to the gym every morning.</li>
+        <li><b>Yoga:</b> Example: Yoga helps me relax and stay flexible.</li>
+        <li><b>Basketball:</b> Example: I play basketball with my friends.</li>
+        <li><b>Exercise:</b> Example: Regular exercise improves health.</li>
+        <li><b>Swimming:</b> Example: Swimming is a great full-body workout.</li>
+        <li><b>Stretching:</b> Example: Stretching is important before any workout.</li>
+        <li><b>Cycling:</b> Example: I enjoy cycling around the city.</li>
+        <li><b>Sports:</b> Example: Sports are an essential part of life.</li>
+      </ul>
+    </section>
+
+    <!-- Shopping Section -->
+    <section id="shopping">
+      <h2>Shopping</h2>
+      <ul>
+        <li><b>Store:</b> Example: I bought new shoes from the store.</li>
+        <li><b>Discount:</b> Example: This shirt is on discount.</li>
+        <li><b>Price:</b> Example: The price of the phone is too high.</li>
+        <li><b>Sale:</b> Example: There is a sale on winter clothes.</li>
+        <li><b>Receipt:</b> Example: Please keep the receipt for returns.</li>
+        <li><b>Shopping Cart:</b> Example: Add items to your shopping cart.</li>
+        <li><b>Product:</b> Example: I am looking for a new product.</li>
+        <li><b>Brand:</b> Example: I prefer buying branded clothes.</li>
+        <li><b>Online Shopping:</b> Example: Online shopping is very convenient.</li>
+        <li><b>Shopkeeper:</b> Example: The shopkeeper helped me find the right size.</li>
+      </ul>
+    </section>
+
+    <!-- Home & Family Section -->
+    <section id="home">
+      <h2>Home & Family</h2>
+      <ul>
+        <li><b>Kitchen:</b> Example: The kitchen is my favorite place at home.</li>
+        <li><b>Bedroom:</b> Example: My bedroom is neat and cozy.</li>
+        <li><b>Living Room:</b> Example: We watch TV in the living room.</li>
+        <li><b>Parents:</b> Example: My parents are very kind.</li>
+        <li><b>Sibling:</b> Example: I have one sibling, my younger sister.</li>
+        <li><b>Neighbor:</b> Example: Our neighbors are friendly.</li>
+        <li><b>Garden:</b> Example: Our garden is full of flowers.</li>
+        <li><b>Furniture:</b> Example: We bought new furniture for our home.</li>
+        <li><b>Garage:</b> Example: The garage is full of old items.</li>
+        <li><b>Roof:</b> Example: The roof was repaired last month.</li>
+      </ul>
+    </section>
+
+    <!-- Time & Weather Section -->
+    <section id="time">
+      <h2>Time & Weather</h2>
+      <ul>
+        <li><b>Clock:</b> Example: The clock shows 3:00 PM.</li>
+        <li><b>Weather:</b> Example: The weather is nice today.</li>
+        <li><b>Morning:</b> Example: I go for a run every morning.</li>
+        <li><b>Evening:</b> Example: The evening is cool and pleasant.</li>
+        <li><b>Rain:</b> Example: It is raining outside.</li>
+        <li><b>Sunny:</b> Example: It's a sunny day, perfect for a walk.</li>
+        <li><b>Cloudy:</b> Example: The sky is cloudy today.</li>
+        <li><b>Snow:</b> Example: It will snow this weekend.</li>
+        <li><b>Time:</b> Example: What time is it?</li>
+        <li><b>Temperature:</b> Example: The temperature is 25°C today.</li>
+      </ul>
+    </section>
+
+    <!-- Health & Medicine Section -->
+    <section id="health">
+      <h2>Health & Medicine</h2>
+      <ul>
+        <li><b>Doctor:</b> Example: I am going to see the doctor.</li>
+        <li><b>Medicine:</b> Example: Take your medicine twice a day.</li>
+        <li><b>Hospital:</b> Example: He was admitted to the hospital.</li>
+        <li><b>Symptom:</b> Example: The symptoms include fever and headache.</li>
+        <li><b>Diagnosis:</b> Example: The doctor gave me a diagnosis.</li>
+        <li><b>Health:</b> Example: Health is the most important thing.</li>
+        <li><b>Exercise:</b> Example: Regular exercise helps maintain good health.</li>
+        <li><b>Vaccine:</b> Example: I received my vaccine today.</li>
+        <li><b>Recovery:</b> Example: It will take a few days for recovery.</li>
+        <li><b>Pain:</b> Example: I have pain in my back.</li>
+      </ul>
+    </section>
+
+    <!-- Emotions & Feelings Section -->
+    <section id="emotions">
+      <h2>Emotions & Feelings</h2>
+      <ul>
+        <li><b>Happy:</b> Example: I feel happy today.</li>
+        <li><b>Sad:</b> Example: She is feeling sad.</li>
+        <li><b>Angry:</b> Example: He is angry because of the delay.</li>
+        <li><b>Excited:</b> Example: I am excited about the trip.</li>
+        <li><b>Fear:</b> Example: I have a fear of spiders.</li>
+        <li><b>Love:</b> Example: I love spending time with family.</li>
+        <li><b>Relaxed:</b> Example: I feel relaxed after yoga.</li>
+        <li><b>Surprised:</b> Example: I was surprised by the gift.</li>
+        <li><b>Confused:</b> Example: I'm confused about the directions.</li>
+        <li><b>Hopeful:</b> Example: I'm hopeful about the future.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created with 💻 for Flamingo Language Learning</p>
+  </footer>
+</body>
+</html>

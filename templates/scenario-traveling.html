@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='scenario-traveling.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">Flamingo</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+        <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Travel Scenario Section -->
+  <section class="scenario-content">
+    <h1>Traveling in English</h1>
+    <p>Learn how to communicate effectively while traveling with key vocabulary, common phrases, and practice dialogues.</p>
+
+    <!-- Key Vocabulary Section -->
+    <div class="vocabulary">
+      <h2>Key Vocabulary</h2>
+      <ul>
+        <li><strong>Passport:</strong> An official document needed to travel internationally.</li>
+        <li><strong>Flight:</strong> A trip or journey made by air, usually via a plane.</li>
+        <li><strong>Luggage:</strong> Bags or suitcases for carrying personal belongings during travel.</li>
+        <li><strong>Reservation:</strong> A prior arrangement made for a place, seat, or service.</li>
+        <li><strong>Check-in:</strong> The process of registering upon arrival at an airport or hotel.</li>
+        <li><strong>Customs:</strong> The process of inspecting travelers' belongings when entering a country.</li>
+      </ul>
+    </div>
+
+    <!-- Travel Phrases Section -->
+    <div class="travel-phrases">
+      <h2>Useful Travel Phrases</h2>
+      <ul>
+        <li><strong>Where is the nearest airport?</strong></li>
+        <li><strong>Can I get a taxi to the hotel?</strong></li>
+        <li><strong>What time does the flight depart?</strong></li>
+        <li><strong>How much is a one-way ticket to the city center?</strong></li>
+        <li><strong>Could you please help me with my luggage?</strong></li>
+      </ul>
+    </div>
+
+    <!-- Sample Dialogue Section -->
+    <div class="dialogues">
+      <h2>Sample Dialogues</h2>
+      <p><strong>Traveler:</strong> Hi, I would like to check in for my flight to New York.</p>
+      <p><strong>Flight Agent:</strong> May I have your passport and ticket, please?</p>
+      <p><strong>Traveler:</strong> Here you go. My flight is at 10:00 AM.</p>
+      <p><strong>Flight Agent:</strong> Thank you. Your gate number is 12B. Have a pleasant flight!</p>
+    </div>
+
+    <!-- Interactive Practice Section -->
+    <div class="practice">
+      <h2>Interactive Practice</h2>
+      <p><strong>Question:</strong> What phrase would you use to ask about a taxi to the hotel?</p>
+      <ol>
+        <li><button onclick="checkAnswer('wrong')">"Where is the nearest bus station?"</button></li>
+        <li><button onclick="checkAnswer('correct')">"Can I get a taxi to the hotel?"</button></li>
+        <li><button onclick="checkAnswer('wrong')">"Is this the right platform for the train?"</button></li>
+      </ol>
+    </div>
+
+    <!-- Cultural Context Section -->
+    <div class="cultural-context">
+      <h2>Cultural Context</h2>
+      <p><strong>Tip:</strong> In many countries, tipping is expected when you receive good service, particularly in restaurants or taxis. It’s typically around 10-15% of the total bill.</p>
+      <p><strong>Tip:</strong> When traveling to a new country, it’s important to learn a few basic words in the local language. Simple greetings like "Hello" and "Thank you" go a long way!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Quiz -->
+  <script>
+    function checkAnswer(answer) {
+      if (answer === 'correct') {
+        alert('Correct! Well done.');
+      } else {
+        alert('Oops! Try again.');
+      }
+    }
+  </script>
+</body>
+</html>

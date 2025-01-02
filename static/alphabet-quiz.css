@@ -1,0 +1,133 @@
+/* General Styles */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration:none ;
+  list-style:none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4fc;
+  color: #333;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6a1b9a;
+  padding: 10px 20px;
+  color: white;
+  
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+.navbar ul li a:hover{
+background: #FF4081; 
+border-radius: 5px;
+} 
+
+
+
+/* Quiz Selection Section */
+.quiz-selection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 80px auto;
+  max-width: 1200px;
+}
+
+.quiz-box {
+  border: 2px solid #6a1b9a;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  width: 280px;
+  background: linear-gradient(135deg, #b39ddb, #9575cd);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.quiz-box:hover {
+  transform: scale(1.05);
+}
+
+.quiz-box button {
+  background-color: #512da8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.quiz-box button:hover{
+  background: #FF4081; 
+border-radius: 5px;
+}
+
+   
+
+/* Quiz Interface */
+.quiz-interface {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#options-container button {
+  display: block;
+  background-color: #d1c4e9;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#options-container button:hover {
+  background-color: #b39ddb;
+}
+
+/* Footer */
+ footer {
+  background-color: #6a1b9a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 290px; 
+  gap: 15px;
+  
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner Courses - Flamingo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='beginer.css') }}">
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+        <h1 class="logo">Flamingo</h1>
+        <nav>
+            <ul>
+              <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+              <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+
+              <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+
+              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <br>
+    <br>
+    <br>
+
+  <!-- Courses Section -->
+  <section class="courses">
+    <h1>Beginner English Courses</h1>
+    <p>Start your journey to learn English with these beginner-friendly lessons.</p>
+    <div class="course-list">
+      <!-- Course 1 -->
+      <div class="course-card">
+        <h2>Alphabet & Numbers</h2>
+        <p>Learn the English alphabet and numbers with pronunciation practice.</p>
+        <button > <a href="{{ url_for('lesson') }}">Start Learning</a></button>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course-card">
+        <h2>Basic Vocabulary</h2>
+        <p>Learn common words used in everyday life with examples.</p>
+        <button > <a href="{{ url_for('basicvocab') }}">Start Learning</a></button>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-card">
+        <h2>Greetings & Introductions</h2>
+        <p>Learn how to greet and introduce yourself in English.</p>
+        <button > <a href="{{ url_for('greeting') }}">Start Learning</a></button>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="course-card">
+        <h2>Basic Grammar</h2>
+        <p>Understand the basic structure of English sentences and grammar rules.</p>
+        <button > <a href="{{ url_for('grammer') }}">Start Learning</a></button>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="course-card">
+        <h2>Real-life Scenarios</h2>
+        <p>Learn English for everyday situations like shopping and traveling.</p>
+        <button > <a href="{{ url_for('reallife') }}">Start Learning</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Flamingo. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

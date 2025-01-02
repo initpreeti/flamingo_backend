@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamingo | Articles Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic-articles.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- <header class="navbar">
+        <div class="logo">Flamingo 🦩</div>
+        <nav>
+            <a href="#articles">Articles</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header> -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Flamingo 🦩</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('user_home') }}">Home</a></li>
+
+                    <li><a href="https://sturdy-umbrella-pjrw4pw549q5h7g6j-8501.app.github.dev/">Chatboat</a></li>
+      
+                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+      
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                  </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Articles Section -->
+        <!-- <section id="articles">
+            <h1>Understanding Articles</h1>
+            <div class="box">
+                <h2>Definite Article</h2>
+                <p><strong>The</strong> is used to refer to a specific noun that is already known to the listener or reader.</p>
+                <p><strong>Example:</strong> I saw <em>the</em> moon last night.</p>
+            </div>
+            <div class="box">
+                <h2>Indefinite Articles</h2>
+                <p><strong>A</strong> and <strong>An</strong> are used to refer to a non-specific noun.</p>
+                <p><strong>Example:</strong> I need <em>an</em> umbrella.</p>
+            </div>
+        </section> -->
+        <section id="articles">
+            <h1>Understanding Articles</h1>
+            <div class="box">
+                <h2>What are Articles?</h2>
+                <p>Articles are words that define a noun as specific or unspecific. The two types of articles are definite articles and indefinite articles.</p>
+            </div>
+            <div class="box">
+                <h2>Definite Article: The</h2>
+                <p><strong>The</strong> is used to refer to something specific or unique.</p>
+                <p><strong>Example:</strong> The sun rises in the east.</p>
+            </div>
+            <div class="box">
+                <h2>Indefinite Articles: A, An</h2>
+                <p><strong>A</strong> and <strong>An</strong> are used to refer to non-specific nouns.</p>
+                <ul>
+                    <li><strong>A:</strong> Used before words starting with consonant sounds. <strong>Example:</strong> A car, A book</li>
+                    <li><strong>An:</strong> Used before words starting with vowel sounds. <strong>Example:</strong> An apple, An elephant</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>When Not to Use Articles</h2>
+                <p>Articles are not used with plural or uncountable nouns when talking generally.</p>
+                <ul>
+                    <li><strong>Example:</strong> Cats are friendly animals.</li>
+                    <li><strong>Example:</strong> I love music.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h1 style="color: rgb(84, 39, 125);">Articles Quiz</h1>
+            <div class="quiz-container">
+                <div id="question-container">
+                    <p id="question-box">Loading question...</p>
+                    <div id="options"></div>
+                </div>
+                <div class="quiz-info">
+                    <p>Question: <span id="current-question">0</span> / 50</p>
+                    <p>Time Left: <span id="time-left">60</span> seconds</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Flamingo | Learn with Fun!</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='basic-articles.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Alphabet & Numbers Page Styles */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration:none ;
+  list-style:none;
+  box-sizing: border-box;}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: center;
+    
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #5A2A82;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+header nav ul li a:hover {
+    background: #FF4081;
+    border-radius: 5px;
+}
+header .login-btn {
+    background: #FF4081;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+  .lesson {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f3f4f6;
+  }
+  
+  .lesson h1 {
+    color: #4c1d95;
+    margin-bottom: 1rem;
+  }
+  
+  .alphabet-section, .numbers-section, .quiz-section {
+    margin: 2rem 0;
+  }
+  
+  .alphabet-list, .number-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .letter-card, .number-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .letter-card h3, .number-card h3 {
+    color: #4c1d95;
+  }
+  
+  button {
+    margin-top: 1rem;
+    background-color: #4c1d95;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6d28d9;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4c1d95;
+    color: white;
+  }

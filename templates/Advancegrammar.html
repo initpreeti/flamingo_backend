@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Grammar</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='Advancegrammar.css') }}">
+  <style>
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Advanced Grammar Features & Courses</h1>
+  </header>
+  <div class="container">
+    <div class="box">
+      
+      <h2>Grammar Rules</h2>
+      <p>Learn advanced grammar rules with examples and explanations.</p>
+      <button><a href="{{ url_for('grammarrules') }}"> Explore</a></button>
+    </div>
+    <div class="box">
+      <h2>Sentence Structures</h2>
+      <p>Understand complex sentence formations and usage.</p>
+      <button><a href="{{ url_for('sentencestruct') }}"> Explore</a></button>
+    </div>
+    <div class="box">
+      <h2>Tenses Mastery</h2>
+      <p>Master all tenses with tips and practice exercises.</p>
+      <button><a href="{{ url_for('testmaster') }}"> Explore</a></button>
+    </div>
+    <div class="box">
+      <h2>Practice Tests</h2>
+      <p>Test your knowledge with interactive grammar quizzes.</p>
+      <button><a href="{{ url_for('practice') }}">Explore </a></button>
+    </div>
+    <div class="box">
+      <h2>Vocabulary Expansion</h2>
+      <p>Enhance your vocabulary with advanced word usage and exercises.</p>
+      <button><a href="{{ url_for('vocabexpension') }}"> Explore </a></button>
+    </div>
+    <div class="box">
+      <h2>Pronunciation Tips</h2>
+      <p>Perfect your pronunciation with easy-to-follow guides and audio.</p>
+      <button><a href="{{ url_for('pronounciation') }}"> Explore </a></button>
+    </div>
+    <div class="box">
+      <h2>Advanced Punctuation</h2>
+      <p>Master the use of punctuation in complex sentences.</p>
+      <button><a href="{{ url_for('advance') }}"> Explore </a></button>
+    </div>
+    <div class="box">
+      <h2>Writing Techniques</h2>
+      <p>Improve your writing style with advanced techniques and examples.</p>
+      <button><a href="{{ url_for('writing') }}"> Explore </a></button>
+      
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Advanced Grammar Courses | All Rights Reserved</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='Advancegrammar.js') }}"></script>
+</body>
+</html>
+ 
